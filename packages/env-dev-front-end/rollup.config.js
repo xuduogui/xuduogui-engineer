@@ -2,7 +2,7 @@
  * @Author: xuziyong
  * @Date: 2021-10-26 00:27:36
  * @LastEditors: xuziyong
- * @LastEditTime: 2021-10-26 01:00:34
+ * @LastEditTime: 2021-10-26 01:21:54
  * @Description: TODO
  */
 import path from 'path'
@@ -35,12 +35,12 @@ const commonConfig = {
 
 const outputConfigs = [
   {
-    file: `${packageJSON.name}.cjs.prod.js`,
+    file: `./dist/${packageJSON.name}.cjs.prod.js`,
     format: 'cjs',
     plugins: [getBabelOutputPlugin({ presets: ['@babel/preset-env'] })]
   },
   {
-    file: `${packageJSON.name}.cjs.js`,
+    file: `./dist/${packageJSON.name}.cjs.js`,
     format: 'cjs',
   }
 ]
