@@ -1,9 +1,10 @@
 {
   "packages": [
     "packages/*",
-    "examples/*"
+    "examples/*",
+    "docs/*"
   ],
-  "npmClient": "npm",
+  "npmClient": "yarn",
   "useWorkspaces": true,
   "version": "independent"
 }
