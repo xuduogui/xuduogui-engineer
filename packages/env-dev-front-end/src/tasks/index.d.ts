@@ -1,1 +1,0 @@
-export { installDemo } from './demo';

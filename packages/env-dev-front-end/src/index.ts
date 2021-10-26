@@ -2,10 +2,10 @@
  * @Author: xuziyong
  * @Date: 2021-10-17 00:27:00
  * @LastEditors: xuziyong
- * @LastEditTime: 2021-10-26 00:59:36
+ * @LastEditTime: 2021-10-27 01:05:48
  * @Description: TODO
  */
-import Listr from "listr";
+import { Listr } from "listr2";
 import { logx } from './config/logx';
 import runs from "./config/runs";
 

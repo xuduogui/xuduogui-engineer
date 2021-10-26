@@ -2,11 +2,11 @@
  * @Author: xuziyong
  * @Date: 2021-10-17 09:49:47
  * @LastEditors: xuziyong
- * @LastEditTime: 2021-10-17 15:53:27
+ * @LastEditTime: 2021-10-27 00:43:34
  * @Description: TODO
  */
-import * as log from 'log4js'
-import * as path from 'path'
+import log from 'log4js'
+import path from 'path'
 
 const timeNow = new Date().getTime()
 
