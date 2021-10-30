@@ -2,7 +2,7 @@
  * @Author: xuziyong
  * @Date: 2021-10-17 09:31:29
  * @LastEditors: xuziyong
- * @LastEditTime: 2021-10-31 00:11:16
+ * @LastEditTime: 2021-10-31 00:20:42
  * @Description: TODO
  */
 import execa from "execa";
@@ -14,7 +14,8 @@ const log = console.log
 const taskInstallItem = async (target: string, testCommond: string, installCommand: string) => {
   log(showStr(`环境开始初始化： ${target}`))
   try {
-    await execa.command(testCommond);
+    const res = await execa.command(testCommond);
+    console.log(res)
     log(`${target} is ok!(no install)`)
   } catch (error) {
     try {
@@ -40,11 +41,13 @@ export const installBase = async () => {
     await execa.command('npm config set disturl https://npm.taobao.org/dist --global');
 
     await taskInstallItem('vue-cli', 'vue -V', 'npm install -g @vue/cli')
+
     await taskInstallItem('yarn', 'yarn -v', 'npm install -g yarn')
     log('yarn 配置源')
     await execa.command('yarn config set registry https://registry.npm.taobao.org --global');
     await execa.command('yarn config set disturl https://npm.taobao.org/dist --global');
 
+    await taskInstallItem('lerna', 'lerna ls', 'npm install --global lerna')
   } catch (error) {
     console.error(error);
     throw new Error(' 环境安装异常 ')
