@@ -2,21 +2,21 @@
  * @Author: xuziyong
  * @Date: 2021-10-17 09:49:47
  * @LastEditors: xuziyong
- * @LastEditTime: 2021-10-30 19:14:19
+ * @LastEditTime: 2021-10-30 21:24:46
  * @Description: TODO
  */
 import log from 'log4js'
 import path from 'path'
 import dayjs from 'dayjs'
-const timeNow = dayjs().format('YYYY-MM-DDTHHmmss')
-console.log(timeNow)
+export const timeNow = dayjs().format('YYYY-MM-DDTHHmmss')
+export const logFile = path.join(__dirname, `../logs/time-${timeNow}.log`)
 
 const logConfigDefault = {
   appenders: {
     // 控制台输出
     console: { type: 'console' },
     // 日志文件
-    file: { type: 'file', filename: path.join(__dirname, `../logs/time-${timeNow}.log`) }
+    file: { type: 'file', filename: logFile }
   },
   categories: {
     // 默认日志
@@ -26,7 +26,7 @@ const logConfigDefault = {
 
 log.configure(logConfigDefault);
 
-const logx = log.getLogger();
+export const logx = log.getLogger();
 
 /**
  * console 代理
@@ -40,11 +40,11 @@ function createLogProxy(logLevel: string, logger: log.Logger = logx) {
       case 'debug':
         return logger.debug(messeage, ...arg)
       case 'info':
-        return logger.debug(messeage, ...arg)
+        return logger.info(messeage, ...arg)
       case 'warn':
-        return logger.debug(messeage, ...arg)
+        return logger.warn(messeage, ...arg)
       case 'error':
-        return logger.debug(messeage, ...arg)
+        return logger.error(messeage, ...arg)
       default:
         break;
     }
@@ -55,4 +55,4 @@ console.info = createLogProxy('info');
 console.warn = createLogProxy('warn');
 console.error = createLogProxy('error');
 
-export {logx}
+// export { logx }

@@ -4,7 +4,7 @@
   "description": "快速搭建前端开发环境",
   "main": "index.js",
   "scripts": {
-    "test": "jest",
+    "test": "jest --coverage",
     "build": "rollup -c ./rollup.config.js",
     "dev": "tsc & node script/src/index.js",
     "env": "ts-node src/index.ts",
@@ -13,25 +13,30 @@
   "author": "xuduogui",
   "license": "MIT",
   "dependencies": {
-    "@babel/core": "^7.15.8",
-    "@babel/preset-env": "^7.15.8",
-    "@rollup/plugin-babel": "^5.3.0",
-    "@rollup/plugin-commonjs": "^21.0.1",
-    "@rollup/plugin-node-resolve": "^13.0.6",
     "dayjs": "^1.10.7",
     "execa": "^5.1.1",
     "listr2": "^3.13.1",
-    "log4js": "^6.3.0",
-    "rollup-plugin-eslint": "^7.0.0",
-    "rollup-plugin-typescript2": "^0.30.0"
+    "log4js": "^6.3.0"
   },
   "devDependencies": {
+    "@babel/core": "^7.15.8",
+    "@babel/preset-env": "^7.15.8",
+    "@babel/preset-typescript": "^7.16.0",
+    "@rollup/plugin-babel": "^5.3.0",
+    "@rollup/plugin-commonjs": "^21.0.1",
+    "@rollup/plugin-node-resolve": "^13.0.6",
     "@tsconfig/node14": "^1.0.1",
     "@tsconfig/recommended": "^1.0.1",
     "@types/fs-extra": "^9.0.13",
+    "@types/jest": "^27.0.2",
     "@types/listr": "^0.14.4",
     "@types/node": "^16.11.0",
+    "fs-extra": "^10.0.0",
+    "jest": "^27.3.1",
+    "rollup-plugin-eslint": "^7.0.0",
     "rollup-plugin-terser": "^7.0.2",
+    "rollup-plugin-typescript2": "^0.30.0",
+    "ts-jest": "^27.0.7",
     "ts-node": "^10.3.0",
     "typescript": "^4.4.4"
   }
