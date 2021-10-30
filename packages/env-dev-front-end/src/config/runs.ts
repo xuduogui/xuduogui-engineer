@@ -1,19 +1,19 @@
-import { installDemo, installYarn } from "../tasks";
+import { installBase, envTest } from "../tasks";
 
 /*
  * @Author: xuziyong
  * @Date: 2021-10-17 16:05:20
  * @LastEditors: xuziyong
- * @LastEditTime: 2021-10-30 19:20:31
+ * @LastEditTime: 2021-10-30 23:31:34
  * @Description: TODO
  */
 export default [
   {
-    title: 'task: install-demo',
-    task: installDemo
+    title: 'task: env test',
+    task: envTest,
   },
   {
-    title: 'task: install-yarn',
-    task: installYarn
+    title: 'task: install-Base',
+    task: installBase
   },
 ]

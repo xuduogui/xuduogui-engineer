@@ -2,7 +2,7 @@
  * @Author: xuziyong
  * @Date: 2021-10-17 00:27:00
  * @LastEditors: xuziyong
- * @LastEditTime: 2021-10-30 19:19:37
+ * @LastEditTime: 2021-10-30 23:32:55
  * @Description: TODO
  */
 import { Listr } from "listr2";
@@ -11,7 +11,7 @@ import runs from "./config/runs";
 
 logx.info('============= 开始运行 =============');
 
-const tasks = new Listr(runs, { concurrent: 1, exitOnError: false });
+const tasks = new Listr(runs, { concurrent: 1, exitOnError: true });
 
 tasks
   .run()
