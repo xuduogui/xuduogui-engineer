@@ -2,7 +2,7 @@
  * @Author: xuziyong
  * @Date: 2021-10-17 09:31:29
  * @LastEditors: xuziyong
- * @LastEditTime: 2021-10-31 00:40:17
+ * @LastEditTime: 2021-10-31 00:45:26
  * @Description: TODO
  */
 import execa from "execa";
@@ -14,8 +14,7 @@ const log = console.log
 const taskInstallItem = async (target: string, testCommond: string, installCommand: string) => {
   log(showStr(`环境开始初始化： ${target}`))
   try {
-    const res = await execa.command(testCommond);
-    console.log(res)
+    await execa.command(testCommond);
     log(`${target} is ok!(no install)`)
   } catch (error) {
     try {
@@ -47,7 +46,7 @@ export const installBase = async () => {
     await execa.command('yarn config set registry https://registry.npm.taobao.org --global');
     await execa.command('yarn config set disturl https://npm.taobao.org/dist --global');
 
-    await taskInstallItem('lerna', 'lerna ls', 'npm install --global lerna')
+    await taskInstallItem('lerna', 'lerna -v', 'npm install --global lerna')
 
     await taskInstallItem('rollup', 'rollup -v', 'npm install --global rollup')
   } catch (error) {
