@@ -2,7 +2,7 @@
  * @Author: xuziyong
  * @Date: 2021-10-26 00:27:36
  * @LastEditors: xuziyong
- * @LastEditTime: 2021-10-27 00:56:01
+ * @LastEditTime: 2021-10-30 18:52:36
  * @Description: TODO
  */
 import path from 'path'
@@ -22,11 +22,19 @@ const extensions = [
   '.js', '.ts', '.tsx'
 ]
 
+let tsconfigDefaults = { compilerOptions: { } };
+let tsconfigOverride = { compilerOptions: { module: 'ESNext' } };
+let tsconfigUrl = 'tsconfig.json'
+
 const commonConfig = {
   input: getPath('./src/index.ts'),
   plugins: [
     commonjs(),
-    ts(),
+    ts({
+      tsconfigDefaults,
+      tsconfig: tsconfigUrl,
+      tsconfigOverride
+    }),
     rs({
       extensions
     }),
