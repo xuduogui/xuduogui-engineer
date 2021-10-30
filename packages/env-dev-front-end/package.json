@@ -1,8 +1,13 @@
 {
   "name": "@xuduogui/env-dev-front-end",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "快速搭建前端开发环境",
   "main": "index.js",
+  "private": "false",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
   "scripts": {
     "test": "jest --coverage",
     "build": "rollup -c ./rollup.config.js",
@@ -39,5 +44,6 @@
     "ts-jest": "^27.0.7",
     "ts-node": "^10.3.0",
     "typescript": "^4.4.4"
-  }
+  },
+  "gitHead": "cfdb3c7338243b1c97f9fdafe04562eb1c4c1203"
 }
