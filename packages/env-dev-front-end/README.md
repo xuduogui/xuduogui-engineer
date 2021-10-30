@@ -14,6 +14,16 @@
 
 ## 功能集
 
+### 安装列表
+
+* node 
+* npm
+* yarn
+* nrm
+* lerna
+* rollup
+* vue
+
 ## 命令集
 
 ## 项目结构说明
