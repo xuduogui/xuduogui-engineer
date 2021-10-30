@@ -2,7 +2,7 @@
  * @Author: xuziyong
  * @Date: 2021-10-17 09:31:29
  * @LastEditors: xuziyong
- * @LastEditTime: 2021-10-31 00:20:42
+ * @LastEditTime: 2021-10-31 00:40:17
  * @Description: TODO
  */
 import execa from "execa";
@@ -48,6 +48,8 @@ export const installBase = async () => {
     await execa.command('yarn config set disturl https://npm.taobao.org/dist --global');
 
     await taskInstallItem('lerna', 'lerna ls', 'npm install --global lerna')
+
+    await taskInstallItem('rollup', 'rollup -v', 'npm install --global rollup')
   } catch (error) {
     console.error(error);
     throw new Error(' 环境安装异常 ')
