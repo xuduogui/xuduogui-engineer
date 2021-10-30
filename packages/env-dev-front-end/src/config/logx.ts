@@ -2,13 +2,14 @@
  * @Author: xuziyong
  * @Date: 2021-10-17 09:49:47
  * @LastEditors: xuziyong
- * @LastEditTime: 2021-10-27 00:43:34
+ * @LastEditTime: 2021-10-30 19:14:19
  * @Description: TODO
  */
 import log from 'log4js'
 import path from 'path'
-
-const timeNow = new Date().getTime()
+import dayjs from 'dayjs'
+const timeNow = dayjs().format('YYYY-MM-DDTHHmmss')
+console.log(timeNow)
 
 const logConfigDefault = {
   appenders: {
