@@ -2,7 +2,7 @@
  * @Author: xuziyong
  * @Date: 2021-10-17 09:49:47
  * @LastEditors: xuziyong
- * @LastEditTime: 2021-10-30 21:24:46
+ * @LastEditTime: 2021-10-31 02:55:53
  * @Description: TODO
  */
 import log from 'log4js'
@@ -54,5 +54,7 @@ console.log = createLogProxy('debug');
 console.info = createLogProxy('info');
 console.warn = createLogProxy('warn');
 console.error = createLogProxy('error');
+
+logx.info(logFile)
 
 // export { logx }
