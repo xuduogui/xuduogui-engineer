@@ -2,7 +2,7 @@
  * @Author: xuziyong
  * @Date: 2021-10-29 23:52:48
  * @LastEditors: xuziyong
- * @LastEditTime: 2021-10-30 00:00:09
+ * @LastEditTime: 2021-10-31 02:32:20
  * @Description: TODO
 -->
 
@@ -10,7 +10,7 @@
 
 ## 前提
 
-* nvm、node、npm
+* nvm
 
 ## 功能集
 
