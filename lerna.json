@@ -2,7 +2,8 @@
   "packages": [
     "packages/*",
     "examples/*",
-    "docs/*"
+    "docs/*",
+    "html/*"
   ],
   "npmClient": "yarn",
   "useWorkspaces": true,

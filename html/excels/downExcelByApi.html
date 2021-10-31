@@ -1,0 +1,196 @@
+<!--
+ * @Author: xuziyong
+ * @Date: 2021-09-26 13:56:06
+ * @LastEditors: xuziyong
+ * @LastEditTime: 2021-10-31 18:10:57
+ * @Description: TODO
+-->
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>api 转 excel</title>
+  <meta charset="utf-8" />
+  <script type="text/javascript" src="https://unpkg.com/xlsx/dist/shim.min.js"></script>
+  <script type="text/javascript" src="https://unpkg.com/xlsx/dist/xlsx.full.min.js"></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <style>
+    .box {
+      width: 800px;
+      margin: 0 auto;
+    }
+
+    .box input,
+    .box textarea {
+      width: 70%;
+      margin: 20px;
+    }
+
+    .box button {
+      margin: 20px;
+      background-color: aquamarine;
+    }
+
+    .box div {
+      width: 100%;
+      padding-left: 20px;
+      border: 1px solid black;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box">
+    <div>
+      url:<textarea type="text" id="url"></textarea>
+    </div>
+    <div>
+      headers: <textarea id="headers"></textarea>
+    </div>
+
+    <div>
+      data: <textarea id="databody"></textarea>
+    </div>
+    <div>
+      method: <input type="text" name="" id="method">
+    </div>
+    <div>
+      dataGetPath: <input type="text" name="" value="data,result,data" id="dataGetPath">
+    </div>
+    <div>
+      下载次数：<input type="text" name="" value="1" id="downNum">
+    </div>
+    <div>
+      下载页码标记：<input type="text" name="" value="page" id="pageTag">
+    </div>
+    <div>
+      起始页码：<input type="text" name="" value="1" id="startPage">
+    </div>
+    <div>
+      单文件输出？（1/0）：<input type="text" value="1" id="isAll">
+    </div>
+    <div>
+      文件名: <input type="text" value="请重命名.xlsx" id="filename">
+    </div>
+    <div>
+      <button id="downBt">下载excel</button>
+    </div>
+
+    <script>
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+        return results == null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+      }
+
+      function getMsgByArr(target, arr) {
+        let res = target
+        if (!arr || !Array.isArray(arr)) {
+          return res
+        }
+        for (let index = 0; index < arr.length; index++) {
+          const element = arr[index];
+          if (res && res[element]) {
+            res = res[element]
+          } else {
+            res = null
+          }
+        }
+        return res
+      }
+
+      function getArrByArr(arr) {
+        if (arr.length === 0) {
+          return []
+        }
+        // head
+        try {
+          const preArr = []
+          const headArr = Object.keys(arr[0])
+          preArr.push(headArr)
+          arr.forEach(element => {
+            const itemArr = []
+            headArr.forEach(ele => {
+              itemArr.push(element[ele])
+            })
+            preArr.push(itemArr)
+          });
+          return preArr
+        } catch (error) {
+          console.log(error)
+          return []
+        }
+      }
+
+      async function getUrlData(pageTag, pageNum) {
+        let data = []
+        try {
+          const url = document.getElementById('url').value
+          const method = document.getElementById('method').value || 'GET'
+          const databody = document.getElementById('databody').value || ''
+          const headers = document.getElementById('headers').value || ''
+          const dataGetPath = document.getElementById('dataGetPath').value || ''
+          const params = {}
+          if (pageTag) {
+            params[pageTag] = pageNum
+          }
+          const res = await axios({
+            url,
+            method,
+            data: databody ? JSON.parse(databody) : {},
+            headers: headers ? JSON.parse(headers) : {},
+            params
+          })
+          const preArr = getMsgByArr(res, dataGetPath.split(','))
+          data = getArrByArr(preArr)
+        } catch (error) {
+          console.log(error)
+        }
+        return data
+      }
+
+      async function downOne(data) {
+        /* original data */
+        var filename = document.getElementById('filename').value || "write.xlsx";
+        var ws_name = "SheetJS";
+        var wb = XLSX.utils.book_new(),
+          ws = XLSX.utils.aoa_to_sheet(data);
+        /* add worksheet to workbook */
+        XLSX.utils.book_append_sheet(wb, ws, ws_name);
+        XLSX.writeFile(wb, document.getElementById('filename').value || 'test.xlsx');
+      }
+
+      document.getElementById('downBt').onclick = async function () {
+        const nums = +document.getElementById('downNum').value
+        const isAll = +document.getElementById('isAll').value
+        let num = 0
+        let allData = []
+        while (num < nums) {
+          let data = await getUrlData(document.getElementById('pageTag').value, (+document.getElementById(
+              'startPage')
+            .value + num))
+          if (isAll) {
+            allData.push(...data)
+          } else if (data.length < 1) {
+            alert(`第${num + 1}次获取接口无数据！`)
+          } else {
+            downOne(data)
+          }
+          num++
+        }
+        if (isAll) {
+          if (allData.length < 1) {
+            alert(`合并接口结果无数据！`)
+          } else {
+            downOne(allData)
+          }
+        }
+      }
+    </script>
+</body>
+
+</html>
