@@ -2,7 +2,7 @@
  * @Author: xuziyong
  * @Date: 2021-10-29 23:52:48
  * @LastEditors: xuziyong
- * @LastEditTime: 2021-10-31 02:32:20
+ * @LastEditTime: 2021-10-31 17:42:31
  * @Description: TODO
 -->
 
@@ -14,6 +14,37 @@
 
 ## 功能集
 
-## 命令集
+* [x] node
+* [x] npm
+* [x] yarn
+* [x] nrm
+* [x] lerna
+* [x] rollup
+* [x] vue
 
-## 项目结构说明
+## 使用方式
+
+### 项目初始化
+
+cmd
+
+``` cmd
+npm init
+npm i @xuduogui/env-dev-front-end
+```
+
+### 新建脚本文件
+
+demo.js
+
+``` javascript
+require('@xuduogui/env-dev-front-end')
+```
+
+### 执行脚本
+
+cmd
+
+``` cmd
+node demo.js
+```
