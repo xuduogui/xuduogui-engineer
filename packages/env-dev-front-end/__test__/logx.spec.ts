@@ -2,11 +2,19 @@
  * @Author: xuziyong
  * @Date: 2021-10-30 19:51:26
  * @LastEditors: xuziyong
- * @LastEditTime: 2021-10-30 22:34:50
+ * @LastEditTime: 2021-11-02 00:17:39
  * @Description: 测试src/config/logx.ts
  */
 import fs from 'fs-extra'
 import { logx, logFile } from '../src/config/logx'
+
+function sleepTime(time) {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      resolve(1)
+    }, time);
+  })
+}
 
 describe('@xuduogui/env-dev-front-end: /src/config/logx', () => {
   describe('console被log4js代理', () => {
@@ -15,6 +23,7 @@ describe('@xuduogui/env-dev-front-end: /src/config/logx', () => {
     console.log(logStr)
 
     test('在console.log执行之后，检查日志文件存在logStr', async () => {
+      await sleepTime(2000)
       const fileText = await fs.readFile(logFile)
       expect(fileText.toString()).toEqual(expect.stringContaining(logStr))
     })
@@ -27,6 +36,7 @@ describe('@xuduogui/env-dev-front-end: /src/config/logx', () => {
     logx.info(logStr)
 
     test('在logx.info执行之后，检查日志文件存在logStr', async () => {
+      await sleepTime(2000)
       const fileText = await fs.readFile(logFile)
       expect(fileText.toString()).toEqual(expect.stringContaining(logStr))
     })
