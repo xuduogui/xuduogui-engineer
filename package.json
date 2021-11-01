@@ -1,6 +1,10 @@
 {
   "name": "xuduogui",
   "private": true,
+  "scripts": {
+    "buildAll": "node ./scripts/build.js",
+    "testAll": "node ./scripts/test.js"
+  },
   "devDependencies": {
     "jest": "^27.3.1",
     "lerna": "^4.0.0",
