@@ -1,10 +1,13 @@
 {
   "packages": [
-    "packages/*",
-    "examples/*",
+    "apps/*",
     "docs/*",
+    "examples/*",
     "html/*",
-    "apps"
+    "libs/*",
+    "packages/*",
+    "servers/*",
+    "tests/*"
   ],
   "npmClient": "yarn",
   "useWorkspaces": true,

@@ -13,10 +13,13 @@
     "typescript": "^4.4.4"
   },
   "workspaces": [
-    "packages/*",
-    "examples/*",
+    "apps/*",
     "docs/*",
+    "examples/*",
     "html/*",
-    "apps"
+    "libs/*",
+    "packages/*",
+    "servers/*",
+    "tests/*"
   ]
 }
