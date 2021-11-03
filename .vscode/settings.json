@@ -1,7 +1,13 @@
 {
   "workbench.colorCustomizations": {
-    "activityBar.background": "#242F35",
-    "titleBar.activeBackground": "#32424B",
-    "titleBar.activeForeground": "#FBFCFC"
-  }
+    "activityBar.background": "#0F3506",
+    "titleBar.activeBackground": "#144A08",
+    "titleBar.activeForeground": "#F1FDEE"
+  },
+  "search.exclude": {
+    "**/.yarn": true,
+    "**/.pnp.*": true
+  },
+  "typescript.tsdk": ".yarn/sdks/typescript/lib",
+  "typescript.enablePromptUseWorkspaceTsdk": true
 }

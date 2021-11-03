@@ -16,6 +16,7 @@
     "packages/*",
     "examples/*",
     "docs/*",
-    "html/*"
+    "html/*",
+    "apps"
   ]
 }

@@ -3,7 +3,8 @@
     "packages/*",
     "examples/*",
     "docs/*",
-    "html/*"
+    "html/*",
+    "apps"
   ],
   "npmClient": "yarn",
   "useWorkspaces": true,
