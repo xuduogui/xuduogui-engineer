@@ -1,8 +1,15 @@
 {
   "name": "@xuduogui/commands",
   "version": "1.0.1",
+  "description": "命令行构建工具",
   "packageManager": "yarn@3.1.0",
   "main": "index.js",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "author": "xuduogui",
+  "license": "MIT",
   "scripts": {
     "build": "tsc"
   },
