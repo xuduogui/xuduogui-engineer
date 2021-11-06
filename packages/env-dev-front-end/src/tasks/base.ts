@@ -2,7 +2,7 @@
  * @Author: xuziyong
  * @Date: 2021-10-17 09:31:29
  * @LastEditors: xuziyong
- * @LastEditTime: 2021-10-31 00:56:54
+ * @LastEditTime: 2021-11-06 22:30:38
  * @Description: TODO
  */
 import execa from "execa";
@@ -51,6 +51,10 @@ export const installBase = async () => {
     await taskInstallItem('lerna', 'lerna -v', 'npm install --global lerna')
 
     await taskInstallItem('rollup', 'rollup -v', 'npm install --global rollup')
+    
+    await taskInstallItem('@microsoft/api-extractor', 'api-extractor -v', 'npm install -g @microsoft/api-extractor')
+    
+    await taskInstallItem('@microsoft/api-documenter', 'api-documenter -v', 'npm install -g @microsoft/api-documenter')
 
   } catch (error) {
     console.error(error);
