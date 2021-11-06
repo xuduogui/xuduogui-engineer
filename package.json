@@ -14,12 +14,7 @@
   },
   "workspaces": [
     "apps/*",
-    "docs/*",
-    "examples/*",
-    "html/*",
-    "libs/*",
     "packages/*",
-    "servers/*",
-    "tests/*"
+    "servers/*"
   ]
 }
