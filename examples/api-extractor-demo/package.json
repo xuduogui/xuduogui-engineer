@@ -1,0 +1,16 @@
+{
+  "name": "@xuduogui/api-extractor-demo",
+  "version": "1.0.0",
+  "main": "./lib/index.js",
+  "typings": "./lib/index.d.ts",
+  "mainEntryPointFilePath": "/<projectFolder>lib/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "extractor": "api-extractor run -c ./config/api-extractor.json -l -v --diagnostics",
+    "doc": "api-documenter markdown --input-folder ./temp --output-folder ./doc/markdown",
+    "exdoc": "yarn run extractor & yarn run doc"
+  },
+  "dependencies": {
+    "@microsoft/api-extractor": "^7.18.17"
+  }
+}
