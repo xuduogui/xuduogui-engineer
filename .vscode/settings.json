@@ -8,6 +8,7 @@
     "**/.yarn": true,
     "**/.pnp.*": true
   },
+  "files.associations": { "*.json": "jsonc" },
   "typescript.tsdk": ".yarn/sdks/typescript/lib",
   "typescript.enablePromptUseWorkspaceTsdk": true
 }
