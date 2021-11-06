@@ -3006,7 +3006,7 @@ __metadata:
   resolution: "@xuduogui/api-extractor-demo@workspace:examples/api-extractor-demo"
   dependencies:
     "@microsoft/api-extractor": ^7.18.17
-    "@xuduogui/commands": "workspace:^"
+    "@xuduogui/commands": ^1.0.2
   languageName: unknown
   linkType: soft
 
@@ -3016,7 +3016,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@xuduogui/commands@workspace:^, @xuduogui/commands@workspace:packages/commands":
+"@xuduogui/commands@^1.0.2, @xuduogui/commands@workspace:packages/commands":
   version: 0.0.0-use.local
   resolution: "@xuduogui/commands@workspace:packages/commands"
   dependencies:
@@ -10483,7 +10483,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "xuduogui@workspace:."
   dependencies:
-    "@xuduogui/commands": "workspace:^"
+    "@xuduogui/commands": ^1.0.2
     jest: ^27.3.1
     lerna: ^4.0.0
     ts-jest: ^27.0.7
