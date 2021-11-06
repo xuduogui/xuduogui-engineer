@@ -1,6 +1,6 @@
 {
   "name": "@xuduogui/commands",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "命令行构建工具",
   "packageManager": "yarn@3.1.0",
   "main": "index.js",
