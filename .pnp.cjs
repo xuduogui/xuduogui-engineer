@@ -4416,7 +4416,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./examples/api-extractor-demo/",
           "packageDependencies": [
             ["@xuduogui/api-extractor-demo", "workspace:examples/api-extractor-demo"],
-            ["@microsoft/api-extractor", "npm:7.18.19::__archiveUrl=https%3A%2F%2Fregistry.npmmirror.com%2F%40microsoft%2Fapi-extractor%2Fdownload%2F%40microsoft%2Fapi-extractor-7.18.19.tgz"]
+            ["@microsoft/api-extractor", "npm:7.18.19::__archiveUrl=https%3A%2F%2Fregistry.npmmirror.com%2F%40microsoft%2Fapi-extractor%2Fdownload%2F%40microsoft%2Fapi-extractor-7.18.19.tgz"],
+            ["@xuduogui/commands", "workspace:packages/commands"]
           ],
           "linkType": "SOFT",
         }]

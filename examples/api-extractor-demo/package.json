@@ -8,9 +8,10 @@
     "build": "tsc",
     "extractor": "api-extractor run -c ./config/api-extractor.json -l -v --diagnostics",
     "doc": "api-documenter markdown --input-folder ./temp --output-folder ./doc/markdown",
-    "exdoc": "yarn run extractor & yarn run doc"
+    "exdoc": "node ./scripts/exdoc.js"
   },
   "dependencies": {
-    "@microsoft/api-extractor": "^7.18.17"
+    "@microsoft/api-extractor": "^7.18.17",
+    "@xuduogui/commands": "workspace:^"
   }
 }

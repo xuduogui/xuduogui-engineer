@@ -3006,6 +3006,7 @@ __metadata:
   resolution: "@xuduogui/api-extractor-demo@workspace:examples/api-extractor-demo"
   dependencies:
     "@microsoft/api-extractor": ^7.18.17
+    "@xuduogui/commands": "workspace:^"
   languageName: unknown
   linkType: soft
 
@@ -3015,7 +3016,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@xuduogui/commands@workspace:packages/commands":
+"@xuduogui/commands@workspace:^, @xuduogui/commands@workspace:packages/commands":
   version: 0.0.0-use.local
   resolution: "@xuduogui/commands@workspace:packages/commands"
   dependencies:
