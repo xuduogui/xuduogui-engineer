@@ -6,6 +6,7 @@
     "testAll": "node ./scripts/test.js"
   },
   "devDependencies": {
+    "@xuduogui/commands": "^1.0.2",
     "jest": "^27.3.1",
     "lerna": "^4.0.0",
     "ts-jest": "^27.0.7",

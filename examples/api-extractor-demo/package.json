@@ -12,6 +12,6 @@
   },
   "dependencies": {
     "@microsoft/api-extractor": "^7.18.17",
-    "@xuduogui/commands": "workspace:^"
+    "@xuduogui/commands": "^1.0.2"
   }
 }

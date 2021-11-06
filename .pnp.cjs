@@ -55,6 +55,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         [null, {
           "packageLocation": "./",
           "packageDependencies": [
+            ["@xuduogui/commands", "workspace:packages/commands"],
             ["jest", "virtual:fa2880ca02803d1b5af7691ee9e37b97f71384cedd93f187fe121ec8f3dce805a3eb8e6498ce769d31f37255c88f2294652799da5b9d22a51e9762fe333abb0a#npm:27.3.1"],
             ["lerna", "npm:4.0.0"],
             ["ts-jest", "virtual:fa2880ca02803d1b5af7691ee9e37b97f71384cedd93f187fe121ec8f3dce805a3eb8e6498ce769d31f37255c88f2294652799da5b9d22a51e9762fe333abb0a#npm:27.0.7"],
@@ -12869,6 +12870,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./",
           "packageDependencies": [
             ["xuduogui", "workspace:."],
+            ["@xuduogui/commands", "workspace:packages/commands"],
             ["jest", "virtual:fa2880ca02803d1b5af7691ee9e37b97f71384cedd93f187fe121ec8f3dce805a3eb8e6498ce769d31f37255c88f2294652799da5b9d22a51e9762fe333abb0a#npm:27.3.1"],
             ["lerna", "npm:4.0.0"],
             ["ts-jest", "virtual:fa2880ca02803d1b5af7691ee9e37b97f71384cedd93f187fe121ec8f3dce805a3eb8e6498ce769d31f37255c88f2294652799da5b9d22a51e9762fe333abb0a#npm:27.0.7"],

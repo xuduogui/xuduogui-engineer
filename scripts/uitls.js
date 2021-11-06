@@ -2,12 +2,9 @@
  * @Author: xuziyong
  * @Date: 2021-11-02 01:06:14
  * @LastEditors: xuziyong
- * @LastEditTime: 2021-11-07 00:46:03
+ * @LastEditTime: 2021-11-07 01:54:13
  * @Description: TODO
  */
-// const execa = require('execa')
-const {doCommand} = require('../packages/commands/index.js')
-
-console.log(doCommand)
+const { doCommand } = require('@xuduogui/commands')
 
 exports.doCommand = doCommand
