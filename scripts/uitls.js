@@ -2,15 +2,12 @@
  * @Author: xuziyong
  * @Date: 2021-11-02 01:06:14
  * @LastEditors: xuziyong
- * @LastEditTime: 2021-11-02 01:12:34
+ * @LastEditTime: 2021-11-07 00:46:03
  * @Description: TODO
  */
-const execa = require('execa')
+// const execa = require('execa')
+const {doCommand} = require('../packages/commands/index.js')
 
-exports.doCommand = async function(cmd) {
-  try {
-    await execa.command(cmd);
-  } catch (error) {
-    console.error(error.stderr || error)
-  }
-}
+console.log(doCommand)
+
+exports.doCommand = doCommand
