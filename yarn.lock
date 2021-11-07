@@ -2356,7 +2356,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@microsoft/tsdoc-config@npm:~0.15.2":
+"@microsoft/tsdoc-config@npm:0.15.2, @microsoft/tsdoc-config@npm:~0.15.2":
   version: 0.15.2
   resolution: "@microsoft/tsdoc-config@npm:0.15.2::__archiveUrl=https%3A%2F%2Fregistry.npmmirror.com%2F%40microsoft%2Ftsdoc-config%2Fdownload%2F%40microsoft%2Ftsdoc-config-0.15.2.tgz"
   dependencies:
@@ -2843,6 +2843,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/eslint-visitor-keys@npm:^1.0.0":
+  version: 1.0.0
+  resolution: "@types/eslint-visitor-keys@npm:1.0.0::__archiveUrl=https%3A%2F%2Fregistry.npmmirror.com%2F%40types%2Feslint-visitor-keys%2Fdownload%2F%40types%2Feslint-visitor-keys-1.0.0.tgz"
+  checksum: a90f0b023e357a59ea04268e0387cfb0ea06703068cc48fe2ca97fa158bcf3c51a6611a56bdbdf763e3451150b92bba3fb5d0b689fc55f856cae8555ec366a63
+  languageName: node
+  linkType: hard
+
 "@types/estree@npm:*":
   version: 0.0.50
   resolution: "@types/estree@npm:0.0.50::__archiveUrl=https%3A%2F%2Fregistry.nlark.com%2F%40types%2Festree%2Fdownload%2F%40types%2Festree-0.0.50.tgz"
@@ -2907,6 +2914,13 @@ __metadata:
     jest-diff: ^27.0.0
     pretty-format: ^27.0.0
   checksum: 814ad5f5d2f277849f47e52906da4b745758e555630fc8cb46a071bde648eefeffb1b35710c530a8cea7fc4ea7c1d813812c120484bf7902ab6c5e473cdd49c9
+  languageName: node
+  linkType: hard
+
+"@types/json-schema@npm:^7.0.3":
+  version: 7.0.9
+  resolution: "@types/json-schema@npm:7.0.9::__archiveUrl=https%3A%2F%2Fregistry.nlark.com%2F%40types%2Fjson-schema%2Fdownload%2F%40types%2Fjson-schema-7.0.9.tgz"
+  checksum: 259d0e25f11a21ba5c708f7ea47196bd396e379fddb79c76f9f4f62c945879dc21657904914313ec2754e443c5018ea8372362f323f30e0792897fdb2098a705
   languageName: node
   linkType: hard
 
@@ -3001,12 +3015,80 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@typescript-eslint/eslint-plugin@npm:~2.6.1":
+  version: 2.6.1
+  resolution: "@typescript-eslint/eslint-plugin@npm:2.6.1::__archiveUrl=https%3A%2F%2Fregistry.npmmirror.com%2F%40typescript-eslint%2Feslint-plugin%2Fdownload%2F%40typescript-eslint%2Feslint-plugin-2.6.1.tgz"
+  dependencies:
+    "@typescript-eslint/experimental-utils": 2.6.1
+    eslint-utils: ^1.4.2
+    functional-red-black-tree: ^1.0.1
+    regexpp: ^2.0.1
+    tsutils: ^3.17.1
+  peerDependencies:
+    "@typescript-eslint/parser": ^2.0.0
+    eslint: ^5.0.0 || ^6.0.0
+  peerDependenciesMeta:
+    typescript:
+      optional: true
+  checksum: af21132aa3972d8b56693072a1a36a53597a4b1d61846ccd84fa05b0d7ec08b312d1a113528d991200066e775d561bb74c068ce9df315da985d6507f89ce40f9
+  languageName: node
+  linkType: hard
+
+"@typescript-eslint/experimental-utils@npm:2.6.1":
+  version: 2.6.1
+  resolution: "@typescript-eslint/experimental-utils@npm:2.6.1::__archiveUrl=https%3A%2F%2Fregistry.npmmirror.com%2F%40typescript-eslint%2Fexperimental-utils%2Fdownload%2F%40typescript-eslint%2Fexperimental-utils-2.6.1.tgz"
+  dependencies:
+    "@types/json-schema": ^7.0.3
+    "@typescript-eslint/typescript-estree": 2.6.1
+    eslint-scope: ^5.0.0
+  peerDependencies:
+    eslint: "*"
+  checksum: 7b6e0eb92b6344c76eb52202398a0ced4d2e777b1524dc6c830ad960086347058055dcde12bc25ace0a991f728cbde85ab0a89d6e382d733d0537ee19875dc43
+  languageName: node
+  linkType: hard
+
+"@typescript-eslint/parser@npm:~2.6.1":
+  version: 2.6.1
+  resolution: "@typescript-eslint/parser@npm:2.6.1::__archiveUrl=https%3A%2F%2Fregistry.npmmirror.com%2F%40typescript-eslint%2Fparser%2Fdownload%2F%40typescript-eslint%2Fparser-2.6.1.tgz"
+  dependencies:
+    "@types/eslint-visitor-keys": ^1.0.0
+    "@typescript-eslint/experimental-utils": 2.6.1
+    "@typescript-eslint/typescript-estree": 2.6.1
+    eslint-visitor-keys: ^1.1.0
+  peerDependencies:
+    eslint: ^5.0.0 || ^6.0.0
+  checksum: 42a909d2c11ab9cf609fad289c97704e71dc2355285f87a11fa82da29cfada0c5665da852c3aacac83613c44695610719b35dda9d91da68262e1abdd4990338b
+  languageName: node
+  linkType: hard
+
+"@typescript-eslint/typescript-estree@npm:2.6.1":
+  version: 2.6.1
+  resolution: "@typescript-eslint/typescript-estree@npm:2.6.1::__archiveUrl=https%3A%2F%2Fregistry.npmmirror.com%2F%40typescript-eslint%2Ftypescript-estree%2Fdownload%2F%40typescript-eslint%2Ftypescript-estree-2.6.1.tgz"
+  dependencies:
+    debug: ^4.1.1
+    glob: ^7.1.4
+    is-glob: ^4.0.1
+    lodash.unescape: 4.0.1
+    semver: ^6.3.0
+    tsutils: ^3.17.1
+  peerDependenciesMeta:
+    typescript:
+      optional: true
+  checksum: 40e16b33b144efa8a0df812b2cab3e3a0bbf311e13b174194b29faa0ec5cd1e28f6517836e1be94c41bd362f4b4ae683cab7c885714190d49c47d88bb13aa70c
+  languageName: node
+  linkType: hard
+
 "@xuduogui/api-extractor-demo@workspace:examples/api-extractor-demo":
   version: 0.0.0-use.local
   resolution: "@xuduogui/api-extractor-demo@workspace:examples/api-extractor-demo"
   dependencies:
     "@microsoft/api-extractor": ^7.18.17
+    "@typescript-eslint/eslint-plugin": ~2.6.1
+    "@typescript-eslint/parser": ~2.6.1
     "@xuduogui/commands": ^1.0.2
+    eslint: ~6.6.0
+    eslint-plugin-tsdoc: ^0.2.14
+    typescript: ~3.7.2
   languageName: unknown
   linkType: soft
 
@@ -4682,6 +4764,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"eslint-plugin-tsdoc@npm:^0.2.14":
+  version: 0.2.14
+  resolution: "eslint-plugin-tsdoc@npm:0.2.14::__archiveUrl=https%3A%2F%2Fregistry.npmmirror.com%2Feslint-plugin-tsdoc%2Fdownload%2Feslint-plugin-tsdoc-0.2.14.tgz"
+  dependencies:
+    "@microsoft/tsdoc": 0.13.2
+    "@microsoft/tsdoc-config": 0.15.2
+  checksum: cb00835ac74de031a01415b2595dd055808de65fcfbd2582ab52cba191e63d41f0d19f83f767b842e437c54204e063f9d9044409bd66a2c58a333873352a0d14
+  languageName: node
+  linkType: hard
+
 "eslint-scope@npm:^5.0.0":
   version: 5.1.1
   resolution: "eslint-scope@npm:5.1.1"
@@ -4689,6 +4781,15 @@ __metadata:
     esrecurse: ^4.3.0
     estraverse: ^4.1.1
   checksum: 47e4b6a3f0cc29c7feedee6c67b225a2da7e155802c6ea13bbef4ac6b9e10c66cd2dcb987867ef176292bf4e64eccc680a49e35e9e9c669f4a02bac17e86abdb
+  languageName: node
+  linkType: hard
+
+"eslint-utils@npm:^1.4.2":
+  version: 1.4.3
+  resolution: "eslint-utils@npm:1.4.3::__archiveUrl=https%3A%2F%2Fregistry.nlark.com%2Feslint-utils%2Fdownload%2Feslint-utils-1.4.3.tgz"
+  dependencies:
+    eslint-visitor-keys: ^1.1.0
+  checksum: a20630e686034107138272f245c460f6d77705d1f4bb0628c1a1faf59fc800f441188916b3ec3b957394dc405aa200a3017dfa2b0fff0976e307a4e645a18d1e
   languageName: node
   linkType: hard
 
@@ -4752,6 +4853,53 @@ __metadata:
   bin:
     eslint: ./bin/eslint.js
   checksum: d4edbe69589ef194e7d3470a18632560c5399a5f685295bd59a11cddba4c6f7e03a137a15a21389f8f85712ebd82d0a628ee4e9cd4391113556029c486616e25
+  languageName: node
+  linkType: hard
+
+"eslint@npm:~6.6.0":
+  version: 6.6.0
+  resolution: "eslint@npm:6.6.0::__archiveUrl=https%3A%2F%2Fregistry.npmmirror.com%2Feslint%2Fdownload%2Feslint-6.6.0.tgz"
+  dependencies:
+    "@babel/code-frame": ^7.0.0
+    ajv: ^6.10.0
+    chalk: ^2.1.0
+    cross-spawn: ^6.0.5
+    debug: ^4.0.1
+    doctrine: ^3.0.0
+    eslint-scope: ^5.0.0
+    eslint-utils: ^1.4.3
+    eslint-visitor-keys: ^1.1.0
+    espree: ^6.1.2
+    esquery: ^1.0.1
+    esutils: ^2.0.2
+    file-entry-cache: ^5.0.1
+    functional-red-black-tree: ^1.0.1
+    glob-parent: ^5.0.0
+    globals: ^11.7.0
+    ignore: ^4.0.6
+    import-fresh: ^3.0.0
+    imurmurhash: ^0.1.4
+    inquirer: ^7.0.0
+    is-glob: ^4.0.0
+    js-yaml: ^3.13.1
+    json-stable-stringify-without-jsonify: ^1.0.1
+    levn: ^0.3.0
+    lodash: ^4.17.14
+    minimatch: ^3.0.4
+    mkdirp: ^0.5.1
+    natural-compare: ^1.4.0
+    optionator: ^0.8.2
+    progress: ^2.0.0
+    regexpp: ^2.0.1
+    semver: ^6.1.2
+    strip-ansi: ^5.2.0
+    strip-json-comments: ^3.0.1
+    table: ^5.2.3
+    text-table: ^0.2.0
+    v8-compile-cache: ^2.0.3
+  bin:
+    eslint: ./bin/eslint.js
+  checksum: 7bdbfe02b39059acf53b7110902661b623cfa9027ddaeb31fdc5b604078024161c969ffafac92273b15c57101a746305a250bf4882ce0847917a1259223b04c8
   languageName: node
   linkType: hard
 
@@ -5365,6 +5513,13 @@ __metadata:
 "globals@npm:^11.1.0":
   version: 11.12.0
   resolution: "globals@npm:11.12.0"
+  checksum: 67051a45eca3db904aee189dfc7cd53c20c7d881679c93f6146ddd4c9f4ab2268e68a919df740d39c71f4445d2b38ee360fc234428baea1dbdfe68bbcb46979e
+  languageName: node
+  linkType: hard
+
+"globals@npm:^11.7.0":
+  version: 11.12.0
+  resolution: "globals@npm:11.12.0::__archiveUrl=https%3A%2F%2Fregistry.npmmirror.com%2Fglobals%2Fdownload%2Fglobals-11.12.0.tgz"
   checksum: 67051a45eca3db904aee189dfc7cd53c20c7d881679c93f6146ddd4c9f4ab2268e68a919df740d39c71f4445d2b38ee360fc234428baea1dbdfe68bbcb46979e
   languageName: node
   linkType: hard
@@ -7037,6 +7192,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"lodash.unescape@npm:4.0.1":
+  version: 4.0.1
+  resolution: "lodash.unescape@npm:4.0.1::__archiveUrl=https%3A%2F%2Fregistry.npmmirror.com%2Flodash.unescape%2Fdownload%2Flodash.unescape-4.0.1.tgz"
+  checksum: 7a9c2133f534619f18e415ea5ae61f654b4d8837a76f31128a8484c1e429357335c8a159d0d79b0f545fd7833d4633194314fa09bfc8be3fff033a07ba6884d8
+  languageName: node
+  linkType: hard
+
 "lodash@npm:^4.17.14, lodash@npm:^4.17.15, lodash@npm:^4.17.19, lodash@npm:^4.7.0":
   version: 4.17.21
   resolution: "lodash@npm:4.17.21"
@@ -7880,6 +8042,20 @@ __metadata:
 "optionator@npm:^0.8.1, optionator@npm:^0.8.3":
   version: 0.8.3
   resolution: "optionator@npm:0.8.3"
+  dependencies:
+    deep-is: ~0.1.3
+    fast-levenshtein: ~2.0.6
+    levn: ~0.3.0
+    prelude-ls: ~1.1.2
+    type-check: ~0.3.2
+    word-wrap: ~1.2.3
+  checksum: b8695ddf3d593203e25ab0900e265d860038486c943ff8b774f596a310f8ceebdb30c6832407a8198ba3ec9debe1abe1f51d4aad94843612db3b76d690c61d34
+  languageName: node
+  linkType: hard
+
+"optionator@npm:^0.8.2":
+  version: 0.8.3
+  resolution: "optionator@npm:0.8.3::__archiveUrl=https%3A%2F%2Fregistry.nlark.com%2Foptionator%2Fdownload%2Foptionator-0.8.3.tgz"
   dependencies:
     deep-is: ~0.1.3
     fast-levenshtein: ~2.0.6
@@ -9860,10 +10036,28 @@ __metadata:
   languageName: node
   linkType: hard
 
+"tslib@npm:^1.8.1":
+  version: 1.14.1
+  resolution: "tslib@npm:1.14.1::__archiveUrl=https%3A%2F%2Fregistry.nlark.com%2Ftslib%2Fdownload%2Ftslib-1.14.1.tgz"
+  checksum: dbe628ef87f66691d5d2959b3e41b9ca0045c3ee3c7c7b906cc1e328b39f199bb1ad9e671c39025bd56122ac57dfbf7385a94843b1cc07c60a4db74795829acd
+  languageName: node
+  linkType: hard
+
 "tslib@npm:^1.9.0":
   version: 1.14.1
   resolution: "tslib@npm:1.14.1"
   checksum: dbe628ef87f66691d5d2959b3e41b9ca0045c3ee3c7c7b906cc1e328b39f199bb1ad9e671c39025bd56122ac57dfbf7385a94843b1cc07c60a4db74795829acd
+  languageName: node
+  linkType: hard
+
+"tsutils@npm:^3.17.1":
+  version: 3.21.0
+  resolution: "tsutils@npm:3.21.0::__archiveUrl=https%3A%2F%2Fregistry.npmmirror.com%2Ftsutils%2Fdownload%2Ftsutils-3.21.0.tgz"
+  dependencies:
+    tslib: ^1.8.1
+  peerDependencies:
+    typescript: ">=2.8.0 || >= 3.2.0-dev || >= 3.3.0-dev || >= 3.4.0-dev || >= 3.5.0-dev || >= 3.6.0-dev || >= 3.6.0-beta || >= 3.7.0-dev || >= 3.7.0-beta"
+  checksum: 1843f4c1b2e0f975e08c4c21caa4af4f7f65a12ac1b81b3b8489366826259323feb3fc7a243123453d2d1a02314205a7634e048d4a8009921da19f99755cdc48
   languageName: node
   linkType: hard
 
@@ -9960,6 +10154,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"typescript@npm:~3.7.2":
+  version: 3.7.7
+  resolution: "typescript@npm:3.7.7::__archiveUrl=https%3A%2F%2Fregistry.npmmirror.com%2Ftypescript%2Fdownload%2Ftypescript-3.7.7.tgz"
+  bin:
+    tsc: bin/tsc
+    tsserver: bin/tsserver
+  checksum: b34e8553365e373290053a731d0f9d9184d8f15bb16a0a1b40d1945fee303a778feeba15082f58c5d3150ac6ae22124c567679418ced814f765e1b3cff57907f
+  languageName: node
+  linkType: hard
+
 "typescript@npm:~4.4.2":
   version: 4.4.4
   resolution: "typescript@npm:4.4.4::__archiveUrl=https%3A%2F%2Fregistry.npmmirror.com%2Ftypescript%2Fdownload%2Ftypescript-4.4.4.tgz"
@@ -9977,6 +10181,16 @@ __metadata:
     tsc: bin/tsc
     tsserver: bin/tsserver
   checksum: bd629ad0da4a15d79aaad56baf3ee7d96f6a181760d430ae77f8c5325df7bffd9edee57544a3970e3651e8b796fe03a5838a7eb39c6d46cc3866c0b23d36a0dd
+  languageName: node
+  linkType: hard
+
+"typescript@patch:typescript@~3.7.2#~builtin<compat/typescript>":
+  version: 3.7.7
+  resolution: "typescript@patch:typescript@npm%3A3.7.7%3A%3A__archiveUrl=https%253A%252F%252Fregistry.npmmirror.com%252Ftypescript%252Fdownload%252Ftypescript-3.7.7.tgz#~builtin<compat/typescript>::version=3.7.7&hash=ddd1e8"
+  bin:
+    tsc: bin/tsc
+    tsserver: bin/tsserver
+  checksum: 61283b54e3976aade14e1e1065d978dc9b11539d5a1ffeee3daf066ff095436e0de3f98759af6bcd32a0e4196a50881daf470c5e4a60768748b1b06f1b680096
   languageName: node
   linkType: hard
 

@@ -1,12 +1,3 @@
-/*
- * @Author: xuziyong
- * @Date: 2021-11-06 00:33:10
- * @LastEditors: xuziyong
- * @LastEditTime: 2021-11-07 17:24:45
- * @Description: TODO
- */
-
-
 /**
  * 包描述，一个项目只有一个【packageDocumentation tag】
  *
@@ -21,5 +12,5 @@
  *
  * @packageDocumentation
  */
-
-export {TheClass, TheAbstract} from './moduleTest/TheClass'
+export { TheClass, TheAbstract } from './moduleTest/TheClass';
+//# sourceMappingURL=index.d.ts.map

@@ -161,7 +161,7 @@
   },
   "kind": "Package",
   "canonicalReference": "@xuduogui/api-extractor-demo!",
-  "docComment": "",
+  "docComment": "/**\n * 包描述，一个项目只有一个【packageDocumentation tag】\n *\n * @remarks\n *\n * 【remarks tag】 演示效果（文件头） 同样也是demo包的入口文件\n *\n * @privateRemarks\n *\n * 【privateRemarks tag】私有privateRemarks演示,不面向公众受众的附加文档内容\n *\n * @packageDocumentation\n */\n",
   "name": "@xuduogui/api-extractor-demo",
   "members": [
     {
@@ -170,30 +170,59 @@
       "name": "",
       "members": [
         {
-          "kind": "Interface",
-          "canonicalReference": "@xuduogui/api-extractor-demo!TestDemo:interface",
-          "docComment": "/**\n * TestDemo 的接口描述\n *\n * @remarks\n *\n * 这是testDemo的接口\n *\n * public\n */\n",
+          "kind": "Class",
+          "canonicalReference": "@xuduogui/api-extractor-demo!TheAbstract:class",
+          "docComment": "/**\n * 测试抽象类的表现\n *\n * @public\n */\n",
           "excerptTokens": [
             {
               "kind": "Content",
-              "text": "export interface TestDemo "
+              "text": "export declare abstract class TheAbstract "
             }
           ],
           "releaseTag": "Public",
-          "name": "TestDemo",
+          "name": "TheAbstract",
           "members": [
             {
-              "kind": "PropertySignature",
-              "canonicalReference": "@xuduogui/api-extractor-demo!TestDemo#prototypeFour:member",
-              "docComment": "",
+              "kind": "Method",
+              "canonicalReference": "@xuduogui/api-extractor-demo!TheAbstract#absMethod:member(1)",
+              "docComment": "/**\n * 抽象方法\n *\n * @virtual\n */\n",
               "excerptTokens": [
                 {
                   "kind": "Content",
-                  "text": "prototypeFour: "
+                  "text": "abstract absMethod(): "
                 },
                 {
                   "kind": "Content",
-                  "text": "boolean"
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [],
+              "name": "absMethod"
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@xuduogui/api-extractor-demo!TheAbstract#name:member",
+              "docComment": "/**\n * name\n *\n * @virtual\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "abstract name: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
                 },
                 {
                   "kind": "Content",
@@ -202,20 +231,75 @@
               ],
               "isOptional": false,
               "releaseTag": "Public",
-              "name": "prototypeFour",
+              "name": "name",
               "propertyTypeTokenRange": {
                 "startIndex": 1,
                 "endIndex": 2
-              }
+              },
+              "isStatic": false
+            }
+          ],
+          "implementsTokenRanges": []
+        },
+        {
+          "kind": "Class",
+          "canonicalReference": "@xuduogui/api-extractor-demo!TheClass:class",
+          "docComment": "/**\n * 测试普通类的表现 构造函数使用tag internal标记，即为第三方不要用 注意：在构造函数其他信息会被省略 {@link www.baidu.com | 测试} 测试link 测试link 接口 {@link ClassMsg | 测试2} ClassMsg 测试link 方法 {@link testMsg | 方法测试}\n *\n * @remarks\n *\n * The constructor for this class is marked as internal. Third-party code should not call the constructor directly or create subclasses that extend the `TheClass` class.\n *\n * @public\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare class TheClass extends "
             },
             {
-              "kind": "PropertySignature",
-              "canonicalReference": "@xuduogui/api-extractor-demo!TestDemo#prototypeOne:member",
-              "docComment": "",
+              "kind": "Reference",
+              "text": "TheAbstract",
+              "canonicalReference": "@xuduogui/api-extractor-demo!TheAbstract:class"
+            },
+            {
+              "kind": "Content",
+              "text": " "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "TheClass",
+          "members": [
+            {
+              "kind": "Method",
+              "canonicalReference": "@xuduogui/api-extractor-demo!TheClass#absMethod:member(1)",
+              "docComment": "/**\n * 测试public方法\n *\n * @returns TheClass实例的名称 + id（`${this.name}: ${this.id}`）; e.g: `测试名称`: 1234\n *\n * @public @experimental\n */\n",
               "excerptTokens": [
                 {
                   "kind": "Content",
-                  "text": "prototypeOne: "
+                  "text": "absMethod(): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [],
+              "name": "absMethod"
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@xuduogui/api-extractor-demo!TheClass#classId:member",
+              "docComment": "/**\n * id\n *\n * @readonly\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "get classId(): "
                 },
                 {
                   "kind": "Content",
@@ -228,20 +312,49 @@
               ],
               "isOptional": false,
               "releaseTag": "Public",
-              "name": "prototypeOne",
+              "name": "classId",
               "propertyTypeTokenRange": {
                 "startIndex": 1,
                 "endIndex": 2
-              }
+              },
+              "isStatic": false
             },
             {
-              "kind": "PropertySignature",
-              "canonicalReference": "@xuduogui/api-extractor-demo!TestDemo#prototypeThree:member",
-              "docComment": "",
+              "kind": "Property",
+              "canonicalReference": "@xuduogui/api-extractor-demo!TheClass#msg:member",
+              "docComment": "/**\n * 消息 {@link ClassMsg} 消息类型\n *\n * @defaultValue\n *\n * default value is {msg: '', type: 1}\n *\n * @public\n */\n",
               "excerptTokens": [
                 {
                   "kind": "Content",
-                  "text": "prototypeThree: "
+                  "text": "msg: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ClassMsg",
+                  "canonicalReference": "@xuduogui/api-extractor-demo!ClassMsg:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "msg",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": false
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@xuduogui/api-extractor-demo!TheClass#name:member",
+              "docComment": "/**\n * TheClass 实例的name；e.g: `preName`\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "readonly name: "
                 },
                 {
                   "kind": "Content",
@@ -254,110 +367,19 @@
               ],
               "isOptional": false,
               "releaseTag": "Public",
-              "name": "prototypeThree",
+              "name": "name",
               "propertyTypeTokenRange": {
                 "startIndex": 1,
                 "endIndex": 2
-              }
-            },
-            {
-              "kind": "PropertySignature",
-              "canonicalReference": "@xuduogui/api-extractor-demo!TestDemo#prototypeTwo:member",
-              "docComment": "",
-              "excerptTokens": [
-                {
-                  "kind": "Content",
-                  "text": "prototypeTwo: "
-                },
-                {
-                  "kind": "Content",
-                  "text": "string"
-                },
-                {
-                  "kind": "Content",
-                  "text": ";"
-                }
-              ],
-              "isOptional": false,
-              "releaseTag": "Public",
-              "name": "prototypeTwo",
-              "propertyTypeTokenRange": {
-                "startIndex": 1,
-                "endIndex": 2
-              }
+              },
+              "isStatic": false
             }
           ],
-          "extendsTokenRanges": []
-        },
-        {
-          "kind": "Variable",
-          "canonicalReference": "@xuduogui/api-extractor-demo!testDemo:var",
-          "docComment": "/**\n * testDemo 实例\n *\n * @remarks\n *\n * 这是TestDemo类\n *\n * @returns testDemo实例\n */\n",
-          "excerptTokens": [
-            {
-              "kind": "Content",
-              "text": "testDemo: "
-            },
-            {
-              "kind": "Reference",
-              "text": "TestDemo",
-              "canonicalReference": "@xuduogui/api-extractor-demo!TestDemo:interface"
-            }
-          ],
-          "releaseTag": "Public",
-          "name": "testDemo",
-          "variableTypeTokenRange": {
-            "startIndex": 1,
-            "endIndex": 2
-          }
-        },
-        {
-          "kind": "Variable",
-          "canonicalReference": "@xuduogui/api-extractor-demo!testFun:var",
-          "docComment": "/**\n * testFun方法\n *\n * @returns TestDemo 实例\n */\n",
-          "excerptTokens": [
-            {
-              "kind": "Content",
-              "text": "testFun: "
-            },
-            {
-              "kind": "Content",
-              "text": "() => "
-            },
-            {
-              "kind": "Reference",
-              "text": "TestDemo",
-              "canonicalReference": "@xuduogui/api-extractor-demo!TestDemo:interface"
-            }
-          ],
-          "releaseTag": "Public",
-          "name": "testFun",
-          "variableTypeTokenRange": {
+          "extendsTokenRange": {
             "startIndex": 1,
             "endIndex": 3
-          }
-        },
-        {
-          "kind": "Variable",
-          "canonicalReference": "@xuduogui/api-extractor-demo!testItem:var",
-          "docComment": "/**\n * testItem\n *\n * @example\n *\n * Here's an example with negative numbers: ``` // Prints \"0\": console.log(add(1,-1));\n */\n",
-          "excerptTokens": [
-            {
-              "kind": "Content",
-              "text": "testItem: "
-            },
-            {
-              "kind": "Reference",
-              "text": "TestItem",
-              "canonicalReference": "@xuduogui/api-extractor-demo!~TestItem:interface"
-            }
-          ],
-          "releaseTag": "Public",
-          "name": "testItem",
-          "variableTypeTokenRange": {
-            "startIndex": 1,
-            "endIndex": 2
-          }
+          },
+          "implementsTokenRanges": []
         }
       ]
     }

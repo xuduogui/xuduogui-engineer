@@ -4226,6 +4226,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
+      ["@types/eslint-visitor-keys", [
+        ["npm:1.0.0::__archiveUrl=https%3A%2F%2Fregistry.npmmirror.com%2F%40types%2Feslint-visitor-keys%2Fdownload%2F%40types%2Feslint-visitor-keys-1.0.0.tgz", {
+          "packageLocation": "./.yarn/cache/@types-eslint-visitor-keys-npm-1.0.0-4572b55bcc-a90f0b023e.zip/node_modules/@types/eslint-visitor-keys/",
+          "packageDependencies": [
+            ["@types/eslint-visitor-keys", "npm:1.0.0::__archiveUrl=https%3A%2F%2Fregistry.npmmirror.com%2F%40types%2Feslint-visitor-keys%2Fdownload%2F%40types%2Feslint-visitor-keys-1.0.0.tgz"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
       ["@types/estree", [
         ["npm:0.0.39::__archiveUrl=https%3A%2F%2Fregistry.nlark.com%2F%40types%2Festree%2Fdownload%2F%40types%2Festree-0.0.39.tgz", {
           "packageLocation": "./.yarn/cache/@types-estree-npm-0.0.39-60e05f0e5e-412fb5b986.zip/node_modules/@types/estree/",
@@ -4298,6 +4307,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/jest", "npm:27.0.2::__archiveUrl=https%3A%2F%2Fregistry.npmmirror.com%2F%40types%2Fjest%2Fdownload%2F%40types%2Fjest-27.0.2.tgz"],
             ["jest-diff", "npm:27.3.1"],
             ["pretty-format", "npm:27.3.1"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["@types/json-schema", [
+        ["npm:7.0.9::__archiveUrl=https%3A%2F%2Fregistry.nlark.com%2F%40types%2Fjson-schema%2Fdownload%2F%40types%2Fjson-schema-7.0.9.tgz", {
+          "packageLocation": "./.yarn/cache/@types-json-schema-npm-7.0.9-7556732e41-259d0e25f1.zip/node_modules/@types/json-schema/",
+          "packageDependencies": [
+            ["@types/json-schema", "npm:7.0.9::__archiveUrl=https%3A%2F%2Fregistry.nlark.com%2F%40types%2Fjson-schema%2Fdownload%2F%40types%2Fjson-schema-7.0.9.tgz"]
           ],
           "linkType": "HARD",
         }]
@@ -4412,13 +4430,132 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
+      ["@typescript-eslint/eslint-plugin", [
+        ["npm:2.6.1::__archiveUrl=https%3A%2F%2Fregistry.npmmirror.com%2F%40typescript-eslint%2Feslint-plugin%2Fdownload%2F%40typescript-eslint%2Feslint-plugin-2.6.1.tgz", {
+          "packageLocation": "./.yarn/cache/@typescript-eslint-eslint-plugin-npm-2.6.1-b5ef9065b2-af21132aa3.zip/node_modules/@typescript-eslint/eslint-plugin/",
+          "packageDependencies": [
+            ["@typescript-eslint/eslint-plugin", "npm:2.6.1::__archiveUrl=https%3A%2F%2Fregistry.npmmirror.com%2F%40typescript-eslint%2Feslint-plugin%2Fdownload%2F%40typescript-eslint%2Feslint-plugin-2.6.1.tgz"]
+          ],
+          "linkType": "SOFT",
+        }],
+        ["virtual:be881b904cca51ee8682cf8154ebc0198b7510cf9f2fb515abaf20559c516ebda0f2ac5a513782d582927ed76a9756360e8f307cb50eaf95dad64d3b059a64c4#npm:2.6.1::__archiveUrl=https%3A%2F%2Fregistry.npmmirror.com%2F%40typescript-eslint%2Feslint-plugin%2Fdownload%2F%40typescript-eslint%2Feslint-plugin-2.6.1.tgz", {
+          "packageLocation": "./.yarn/__virtual__/@typescript-eslint-eslint-plugin-virtual-a4248fc515/0/cache/@typescript-eslint-eslint-plugin-npm-2.6.1-b5ef9065b2-af21132aa3.zip/node_modules/@typescript-eslint/eslint-plugin/",
+          "packageDependencies": [
+            ["@typescript-eslint/eslint-plugin", "virtual:be881b904cca51ee8682cf8154ebc0198b7510cf9f2fb515abaf20559c516ebda0f2ac5a513782d582927ed76a9756360e8f307cb50eaf95dad64d3b059a64c4#npm:2.6.1::__archiveUrl=https%3A%2F%2Fregistry.npmmirror.com%2F%40typescript-eslint%2Feslint-plugin%2Fdownload%2F%40typescript-eslint%2Feslint-plugin-2.6.1.tgz"],
+            ["@types/eslint", null],
+            ["@types/typescript", null],
+            ["@types/typescript-eslint__parser", null],
+            ["@typescript-eslint/experimental-utils", "virtual:a4248fc515287b78274d10127544d0155f671d9175e7fef72d17a3c3be7a23d1d9b8222d7ee54865be4de4d65ab096b98382f19d451043b130d4ac7689ceb66c#npm:2.6.1::__archiveUrl=https%3A%2F%2Fregistry.npmmirror.com%2F%40typescript-eslint%2Fexperimental-utils%2Fdownload%2F%40typescript-eslint%2Fexperimental-utils-2.6.1.tgz"],
+            ["@typescript-eslint/parser", "virtual:be881b904cca51ee8682cf8154ebc0198b7510cf9f2fb515abaf20559c516ebda0f2ac5a513782d582927ed76a9756360e8f307cb50eaf95dad64d3b059a64c4#npm:2.6.1::__archiveUrl=https%3A%2F%2Fregistry.npmmirror.com%2F%40typescript-eslint%2Fparser%2Fdownload%2F%40typescript-eslint%2Fparser-2.6.1.tgz"],
+            ["eslint", "npm:6.6.0::__archiveUrl=https%3A%2F%2Fregistry.npmmirror.com%2Feslint%2Fdownload%2Feslint-6.6.0.tgz"],
+            ["eslint-utils", "npm:1.4.3::__archiveUrl=https%3A%2F%2Fregistry.nlark.com%2Feslint-utils%2Fdownload%2Feslint-utils-1.4.3.tgz"],
+            ["functional-red-black-tree", "npm:1.0.1"],
+            ["regexpp", "npm:2.0.1"],
+            ["tsutils", "virtual:a4248fc515287b78274d10127544d0155f671d9175e7fef72d17a3c3be7a23d1d9b8222d7ee54865be4de4d65ab096b98382f19d451043b130d4ac7689ceb66c#npm:3.21.0::__archiveUrl=https%3A%2F%2Fregistry.npmmirror.com%2Ftsutils%2Fdownload%2Ftsutils-3.21.0.tgz"],
+            ["typescript", "patch:typescript@npm%3A3.7.7%3A%3A__archiveUrl=https%253A%252F%252Fregistry.npmmirror.com%252Ftypescript%252Fdownload%252Ftypescript-3.7.7.tgz#~builtin<compat/typescript>::version=3.7.7&hash=ddd1e8"]
+          ],
+          "packagePeers": [
+            "@types/eslint",
+            "@types/typescript-eslint__parser",
+            "@types/typescript",
+            "@typescript-eslint/parser",
+            "eslint",
+            "typescript"
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["@typescript-eslint/experimental-utils", [
+        ["npm:2.6.1::__archiveUrl=https%3A%2F%2Fregistry.npmmirror.com%2F%40typescript-eslint%2Fexperimental-utils%2Fdownload%2F%40typescript-eslint%2Fexperimental-utils-2.6.1.tgz", {
+          "packageLocation": "./.yarn/cache/@typescript-eslint-experimental-utils-npm-2.6.1-1719af99ed-7b6e0eb92b.zip/node_modules/@typescript-eslint/experimental-utils/",
+          "packageDependencies": [
+            ["@typescript-eslint/experimental-utils", "npm:2.6.1::__archiveUrl=https%3A%2F%2Fregistry.npmmirror.com%2F%40typescript-eslint%2Fexperimental-utils%2Fdownload%2F%40typescript-eslint%2Fexperimental-utils-2.6.1.tgz"]
+          ],
+          "linkType": "SOFT",
+        }],
+        ["virtual:a4248fc515287b78274d10127544d0155f671d9175e7fef72d17a3c3be7a23d1d9b8222d7ee54865be4de4d65ab096b98382f19d451043b130d4ac7689ceb66c#npm:2.6.1::__archiveUrl=https%3A%2F%2Fregistry.npmmirror.com%2F%40typescript-eslint%2Fexperimental-utils%2Fdownload%2F%40typescript-eslint%2Fexperimental-utils-2.6.1.tgz", {
+          "packageLocation": "./.yarn/__virtual__/@typescript-eslint-experimental-utils-virtual-64966df343/0/cache/@typescript-eslint-experimental-utils-npm-2.6.1-1719af99ed-7b6e0eb92b.zip/node_modules/@typescript-eslint/experimental-utils/",
+          "packageDependencies": [
+            ["@typescript-eslint/experimental-utils", "virtual:a4248fc515287b78274d10127544d0155f671d9175e7fef72d17a3c3be7a23d1d9b8222d7ee54865be4de4d65ab096b98382f19d451043b130d4ac7689ceb66c#npm:2.6.1::__archiveUrl=https%3A%2F%2Fregistry.npmmirror.com%2F%40typescript-eslint%2Fexperimental-utils%2Fdownload%2F%40typescript-eslint%2Fexperimental-utils-2.6.1.tgz"],
+            ["@types/eslint", null],
+            ["@types/json-schema", "npm:7.0.9::__archiveUrl=https%3A%2F%2Fregistry.nlark.com%2F%40types%2Fjson-schema%2Fdownload%2F%40types%2Fjson-schema-7.0.9.tgz"],
+            ["@typescript-eslint/typescript-estree", "virtual:64966df343b0a78973edc4c8ebee46c7218035c6d37448ef812277ea85cbe103042a6cfb5c1435881a9e3eefb5a30961a7758bc0880d3b864cad0147c33b0632#npm:2.6.1::__archiveUrl=https%3A%2F%2Fregistry.npmmirror.com%2F%40typescript-eslint%2Ftypescript-estree%2Fdownload%2F%40typescript-eslint%2Ftypescript-estree-2.6.1.tgz"],
+            ["eslint", "npm:6.6.0::__archiveUrl=https%3A%2F%2Fregistry.npmmirror.com%2Feslint%2Fdownload%2Feslint-6.6.0.tgz"],
+            ["eslint-scope", "npm:5.1.1"]
+          ],
+          "packagePeers": [
+            "@types/eslint",
+            "eslint"
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["@typescript-eslint/parser", [
+        ["npm:2.6.1::__archiveUrl=https%3A%2F%2Fregistry.npmmirror.com%2F%40typescript-eslint%2Fparser%2Fdownload%2F%40typescript-eslint%2Fparser-2.6.1.tgz", {
+          "packageLocation": "./.yarn/cache/@typescript-eslint-parser-npm-2.6.1-88e3db11b8-42a909d2c1.zip/node_modules/@typescript-eslint/parser/",
+          "packageDependencies": [
+            ["@typescript-eslint/parser", "npm:2.6.1::__archiveUrl=https%3A%2F%2Fregistry.npmmirror.com%2F%40typescript-eslint%2Fparser%2Fdownload%2F%40typescript-eslint%2Fparser-2.6.1.tgz"]
+          ],
+          "linkType": "SOFT",
+        }],
+        ["virtual:be881b904cca51ee8682cf8154ebc0198b7510cf9f2fb515abaf20559c516ebda0f2ac5a513782d582927ed76a9756360e8f307cb50eaf95dad64d3b059a64c4#npm:2.6.1::__archiveUrl=https%3A%2F%2Fregistry.npmmirror.com%2F%40typescript-eslint%2Fparser%2Fdownload%2F%40typescript-eslint%2Fparser-2.6.1.tgz", {
+          "packageLocation": "./.yarn/__virtual__/@typescript-eslint-parser-virtual-151f6438f9/0/cache/@typescript-eslint-parser-npm-2.6.1-88e3db11b8-42a909d2c1.zip/node_modules/@typescript-eslint/parser/",
+          "packageDependencies": [
+            ["@typescript-eslint/parser", "virtual:be881b904cca51ee8682cf8154ebc0198b7510cf9f2fb515abaf20559c516ebda0f2ac5a513782d582927ed76a9756360e8f307cb50eaf95dad64d3b059a64c4#npm:2.6.1::__archiveUrl=https%3A%2F%2Fregistry.npmmirror.com%2F%40typescript-eslint%2Fparser%2Fdownload%2F%40typescript-eslint%2Fparser-2.6.1.tgz"],
+            ["@types/eslint", null],
+            ["@types/eslint-visitor-keys", "npm:1.0.0::__archiveUrl=https%3A%2F%2Fregistry.npmmirror.com%2F%40types%2Feslint-visitor-keys%2Fdownload%2F%40types%2Feslint-visitor-keys-1.0.0.tgz"],
+            ["@typescript-eslint/experimental-utils", "virtual:a4248fc515287b78274d10127544d0155f671d9175e7fef72d17a3c3be7a23d1d9b8222d7ee54865be4de4d65ab096b98382f19d451043b130d4ac7689ceb66c#npm:2.6.1::__archiveUrl=https%3A%2F%2Fregistry.npmmirror.com%2F%40typescript-eslint%2Fexperimental-utils%2Fdownload%2F%40typescript-eslint%2Fexperimental-utils-2.6.1.tgz"],
+            ["@typescript-eslint/typescript-estree", "virtual:64966df343b0a78973edc4c8ebee46c7218035c6d37448ef812277ea85cbe103042a6cfb5c1435881a9e3eefb5a30961a7758bc0880d3b864cad0147c33b0632#npm:2.6.1::__archiveUrl=https%3A%2F%2Fregistry.npmmirror.com%2F%40typescript-eslint%2Ftypescript-estree%2Fdownload%2F%40typescript-eslint%2Ftypescript-estree-2.6.1.tgz"],
+            ["eslint", "npm:6.6.0::__archiveUrl=https%3A%2F%2Fregistry.npmmirror.com%2Feslint%2Fdownload%2Feslint-6.6.0.tgz"],
+            ["eslint-visitor-keys", "npm:1.3.0"]
+          ],
+          "packagePeers": [
+            "@types/eslint",
+            "eslint"
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["@typescript-eslint/typescript-estree", [
+        ["npm:2.6.1::__archiveUrl=https%3A%2F%2Fregistry.npmmirror.com%2F%40typescript-eslint%2Ftypescript-estree%2Fdownload%2F%40typescript-eslint%2Ftypescript-estree-2.6.1.tgz", {
+          "packageLocation": "./.yarn/cache/@typescript-eslint-typescript-estree-npm-2.6.1-c6df7e54cd-40e16b33b1.zip/node_modules/@typescript-eslint/typescript-estree/",
+          "packageDependencies": [
+            ["@typescript-eslint/typescript-estree", "npm:2.6.1::__archiveUrl=https%3A%2F%2Fregistry.npmmirror.com%2F%40typescript-eslint%2Ftypescript-estree%2Fdownload%2F%40typescript-eslint%2Ftypescript-estree-2.6.1.tgz"]
+          ],
+          "linkType": "SOFT",
+        }],
+        ["virtual:64966df343b0a78973edc4c8ebee46c7218035c6d37448ef812277ea85cbe103042a6cfb5c1435881a9e3eefb5a30961a7758bc0880d3b864cad0147c33b0632#npm:2.6.1::__archiveUrl=https%3A%2F%2Fregistry.npmmirror.com%2F%40typescript-eslint%2Ftypescript-estree%2Fdownload%2F%40typescript-eslint%2Ftypescript-estree-2.6.1.tgz", {
+          "packageLocation": "./.yarn/__virtual__/@typescript-eslint-typescript-estree-virtual-a05541bf64/0/cache/@typescript-eslint-typescript-estree-npm-2.6.1-c6df7e54cd-40e16b33b1.zip/node_modules/@typescript-eslint/typescript-estree/",
+          "packageDependencies": [
+            ["@typescript-eslint/typescript-estree", "virtual:64966df343b0a78973edc4c8ebee46c7218035c6d37448ef812277ea85cbe103042a6cfb5c1435881a9e3eefb5a30961a7758bc0880d3b864cad0147c33b0632#npm:2.6.1::__archiveUrl=https%3A%2F%2Fregistry.npmmirror.com%2F%40typescript-eslint%2Ftypescript-estree%2Fdownload%2F%40typescript-eslint%2Ftypescript-estree-2.6.1.tgz"],
+            ["@types/typescript", null],
+            ["debug", "virtual:4d5b41b4c144bc0f7c0e4c4c2164d0bc5d527811557a2fd7f2ec3307b1cf1ca97f42a730a90b32caada41091b3e922a1e5a2d8c6ff2841b6857305532c68aca8#npm:4.3.2"],
+            ["glob", "npm:7.2.0"],
+            ["is-glob", "npm:4.0.3"],
+            ["lodash.unescape", "npm:4.0.1::__archiveUrl=https%3A%2F%2Fregistry.npmmirror.com%2Flodash.unescape%2Fdownload%2Flodash.unescape-4.0.1.tgz"],
+            ["semver", "npm:6.3.0"],
+            ["tsutils", "virtual:a05541bf6440c5c95f7e153b2574cf2274b63b72398cee72506e895a49b5b3dd7f2a7821ae295b3111e5431262d91d3b404e60e35a2db59b84b0cf3c75073d6d#npm:3.21.0::__archiveUrl=https%3A%2F%2Fregistry.npmmirror.com%2Ftsutils%2Fdownload%2Ftsutils-3.21.0.tgz"],
+            ["typescript", null]
+          ],
+          "packagePeers": [
+            "@types/typescript",
+            "typescript"
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
       ["@xuduogui/api-extractor-demo", [
         ["workspace:examples/api-extractor-demo", {
           "packageLocation": "./examples/api-extractor-demo/",
           "packageDependencies": [
             ["@xuduogui/api-extractor-demo", "workspace:examples/api-extractor-demo"],
             ["@microsoft/api-extractor", "npm:7.18.19::__archiveUrl=https%3A%2F%2Fregistry.npmmirror.com%2F%40microsoft%2Fapi-extractor%2Fdownload%2F%40microsoft%2Fapi-extractor-7.18.19.tgz"],
-            ["@xuduogui/commands", "workspace:packages/commands"]
+            ["@typescript-eslint/eslint-plugin", "virtual:be881b904cca51ee8682cf8154ebc0198b7510cf9f2fb515abaf20559c516ebda0f2ac5a513782d582927ed76a9756360e8f307cb50eaf95dad64d3b059a64c4#npm:2.6.1::__archiveUrl=https%3A%2F%2Fregistry.npmmirror.com%2F%40typescript-eslint%2Feslint-plugin%2Fdownload%2F%40typescript-eslint%2Feslint-plugin-2.6.1.tgz"],
+            ["@typescript-eslint/parser", "virtual:be881b904cca51ee8682cf8154ebc0198b7510cf9f2fb515abaf20559c516ebda0f2ac5a513782d582927ed76a9756360e8f307cb50eaf95dad64d3b059a64c4#npm:2.6.1::__archiveUrl=https%3A%2F%2Fregistry.npmmirror.com%2F%40typescript-eslint%2Fparser%2Fdownload%2F%40typescript-eslint%2Fparser-2.6.1.tgz"],
+            ["@xuduogui/commands", "workspace:packages/commands"],
+            ["eslint", "npm:6.6.0::__archiveUrl=https%3A%2F%2Fregistry.npmmirror.com%2Feslint%2Fdownload%2Feslint-6.6.0.tgz"],
+            ["eslint-plugin-tsdoc", "npm:0.2.14::__archiveUrl=https%3A%2F%2Fregistry.npmmirror.com%2Feslint-plugin-tsdoc%2Fdownload%2Feslint-plugin-tsdoc-0.2.14.tgz"],
+            ["typescript", "patch:typescript@npm%3A3.7.7%3A%3A__archiveUrl=https%253A%252F%252Fregistry.npmmirror.com%252Ftypescript%252Fdownload%252Ftypescript-3.7.7.tgz#~builtin<compat/typescript>::version=3.7.7&hash=ddd1e8"]
           ],
           "linkType": "SOFT",
         }]
@@ -6415,6 +6552,50 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["eslint", [
+        ["npm:6.6.0::__archiveUrl=https%3A%2F%2Fregistry.npmmirror.com%2Feslint%2Fdownload%2Feslint-6.6.0.tgz", {
+          "packageLocation": "./.yarn/cache/eslint-npm-6.6.0-f4786a6823-7bdbfe02b3.zip/node_modules/eslint/",
+          "packageDependencies": [
+            ["eslint", "npm:6.6.0::__archiveUrl=https%3A%2F%2Fregistry.npmmirror.com%2Feslint%2Fdownload%2Feslint-6.6.0.tgz"],
+            ["@babel/code-frame", "npm:7.16.0::__archiveUrl=https%3A%2F%2Fregistry.npmmirror.com%2F%40babel%2Fcode-frame%2Fdownload%2F%40babel%2Fcode-frame-7.16.0.tgz"],
+            ["ajv", "npm:6.12.6"],
+            ["chalk", "npm:2.4.2"],
+            ["cross-spawn", "npm:6.0.5"],
+            ["debug", "virtual:4d5b41b4c144bc0f7c0e4c4c2164d0bc5d527811557a2fd7f2ec3307b1cf1ca97f42a730a90b32caada41091b3e922a1e5a2d8c6ff2841b6857305532c68aca8#npm:4.3.2"],
+            ["doctrine", "npm:3.0.0"],
+            ["eslint-scope", "npm:5.1.1"],
+            ["eslint-utils", "npm:1.4.3"],
+            ["eslint-visitor-keys", "npm:1.3.0"],
+            ["espree", "npm:6.2.1"],
+            ["esquery", "npm:1.4.0"],
+            ["esutils", "npm:2.0.3"],
+            ["file-entry-cache", "npm:5.0.1"],
+            ["functional-red-black-tree", "npm:1.0.1"],
+            ["glob-parent", "npm:5.1.2"],
+            ["globals", "npm:11.12.0::__archiveUrl=https%3A%2F%2Fregistry.npmmirror.com%2Fglobals%2Fdownload%2Fglobals-11.12.0.tgz"],
+            ["ignore", "npm:4.0.6"],
+            ["import-fresh", "npm:3.3.0"],
+            ["imurmurhash", "npm:0.1.4"],
+            ["inquirer", "npm:7.3.3"],
+            ["is-glob", "npm:4.0.3"],
+            ["js-yaml", "npm:3.14.1"],
+            ["json-stable-stringify-without-jsonify", "npm:1.0.1"],
+            ["levn", "npm:0.3.0"],
+            ["lodash", "npm:4.17.21"],
+            ["minimatch", "npm:3.0.4"],
+            ["mkdirp", "npm:0.5.5"],
+            ["natural-compare", "npm:1.4.0"],
+            ["optionator", "npm:0.8.3::__archiveUrl=https%3A%2F%2Fregistry.nlark.com%2Foptionator%2Fdownload%2Foptionator-0.8.3.tgz"],
+            ["progress", "npm:2.0.3"],
+            ["regexpp", "npm:2.0.1"],
+            ["semver", "npm:6.3.0"],
+            ["strip-ansi", "npm:5.2.0"],
+            ["strip-json-comments", "npm:3.1.1"],
+            ["table", "npm:5.4.6"],
+            ["text-table", "npm:0.2.0"],
+            ["v8-compile-cache", "npm:2.3.0"]
+          ],
+          "linkType": "HARD",
+        }],
         ["npm:6.8.0", {
           "packageLocation": "./.yarn/cache/eslint-npm-6.8.0-d27045f313-d4edbe6958.zip/node_modules/eslint/",
           "packageDependencies": [
@@ -6460,6 +6641,17 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
+      ["eslint-plugin-tsdoc", [
+        ["npm:0.2.14::__archiveUrl=https%3A%2F%2Fregistry.npmmirror.com%2Feslint-plugin-tsdoc%2Fdownload%2Feslint-plugin-tsdoc-0.2.14.tgz", {
+          "packageLocation": "./.yarn/cache/eslint-plugin-tsdoc-npm-0.2.14-74c3b7acce-cb00835ac7.zip/node_modules/eslint-plugin-tsdoc/",
+          "packageDependencies": [
+            ["eslint-plugin-tsdoc", "npm:0.2.14::__archiveUrl=https%3A%2F%2Fregistry.npmmirror.com%2Feslint-plugin-tsdoc%2Fdownload%2Feslint-plugin-tsdoc-0.2.14.tgz"],
+            ["@microsoft/tsdoc", "npm:0.13.2::__archiveUrl=https%3A%2F%2Fregistry.npmmirror.com%2F%40microsoft%2Ftsdoc%2Fdownload%2F%40microsoft%2Ftsdoc-0.13.2.tgz"],
+            ["@microsoft/tsdoc-config", "npm:0.15.2::__archiveUrl=https%3A%2F%2Fregistry.npmmirror.com%2F%40microsoft%2Ftsdoc-config%2Fdownload%2F%40microsoft%2Ftsdoc-config-0.15.2.tgz"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
       ["eslint-scope", [
         ["npm:5.1.1", {
           "packageLocation": "./.yarn/cache/eslint-scope-npm-5.1.1-71fe59b18a-47e4b6a3f0.zip/node_modules/eslint-scope/",
@@ -6476,6 +6668,14 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/eslint-utils-npm-1.4.3-b8f8bce3ac-a20630e686.zip/node_modules/eslint-utils/",
           "packageDependencies": [
             ["eslint-utils", "npm:1.4.3"],
+            ["eslint-visitor-keys", "npm:1.3.0"]
+          ],
+          "linkType": "HARD",
+        }],
+        ["npm:1.4.3::__archiveUrl=https%3A%2F%2Fregistry.nlark.com%2Feslint-utils%2Fdownload%2Feslint-utils-1.4.3.tgz", {
+          "packageLocation": "./.yarn/cache/eslint-utils-npm-1.4.3-5c65ab1a7d-a20630e686.zip/node_modules/eslint-utils/",
+          "packageDependencies": [
+            ["eslint-utils", "npm:1.4.3::__archiveUrl=https%3A%2F%2Fregistry.nlark.com%2Feslint-utils%2Fdownload%2Feslint-utils-1.4.3.tgz"],
             ["eslint-visitor-keys", "npm:1.3.0"]
           ],
           "linkType": "HARD",
@@ -7153,6 +7353,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/globals-npm-11.12.0-1fa7f41a6c-67051a45ec.zip/node_modules/globals/",
           "packageDependencies": [
             ["globals", "npm:11.12.0"]
+          ],
+          "linkType": "HARD",
+        }],
+        ["npm:11.12.0::__archiveUrl=https%3A%2F%2Fregistry.npmmirror.com%2Fglobals%2Fdownload%2Fglobals-11.12.0.tgz", {
+          "packageLocation": "./.yarn/cache/globals-npm-11.12.0-950e3cd8ba-67051a45ec.zip/node_modules/globals/",
+          "packageDependencies": [
+            ["globals", "npm:11.12.0::__archiveUrl=https%3A%2F%2Fregistry.npmmirror.com%2Fglobals%2Fdownload%2Fglobals-11.12.0.tgz"]
           ],
           "linkType": "HARD",
         }],
@@ -9053,6 +9260,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
+      ["lodash.unescape", [
+        ["npm:4.0.1::__archiveUrl=https%3A%2F%2Fregistry.npmmirror.com%2Flodash.unescape%2Fdownload%2Flodash.unescape-4.0.1.tgz", {
+          "packageLocation": "./.yarn/cache/lodash.unescape-npm-4.0.1-074ea83fec-7a9c2133f5.zip/node_modules/lodash.unescape/",
+          "packageDependencies": [
+            ["lodash.unescape", "npm:4.0.1::__archiveUrl=https%3A%2F%2Fregistry.npmmirror.com%2Flodash.unescape%2Fdownload%2Flodash.unescape-4.0.1.tgz"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
       ["log-update", [
         ["npm:4.0.0", {
           "packageLocation": "./.yarn/cache/log-update-npm-4.0.0-9d0554261c-ae2f85bbab.zip/node_modules/log-update/",
@@ -9949,6 +10165,19 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/optionator-npm-0.8.3-bc555bc5b7-b8695ddf3d.zip/node_modules/optionator/",
           "packageDependencies": [
             ["optionator", "npm:0.8.3"],
+            ["deep-is", "npm:0.1.4"],
+            ["fast-levenshtein", "npm:2.0.6"],
+            ["levn", "npm:0.3.0"],
+            ["prelude-ls", "npm:1.1.2"],
+            ["type-check", "npm:0.3.2"],
+            ["word-wrap", "npm:1.2.3"]
+          ],
+          "linkType": "HARD",
+        }],
+        ["npm:0.8.3::__archiveUrl=https%3A%2F%2Fregistry.nlark.com%2Foptionator%2Fdownload%2Foptionator-0.8.3.tgz", {
+          "packageLocation": "./.yarn/cache/optionator-npm-0.8.3-4ff980e96a-b8695ddf3d.zip/node_modules/optionator/",
+          "packageDependencies": [
+            ["optionator", "npm:0.8.3::__archiveUrl=https%3A%2F%2Fregistry.nlark.com%2Foptionator%2Fdownload%2Foptionator-0.8.3.tgz"],
             ["deep-is", "npm:0.1.4"],
             ["fast-levenshtein", "npm:2.0.6"],
             ["levn", "npm:0.3.0"],
@@ -12194,10 +12423,54 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "linkType": "HARD",
         }],
+        ["npm:1.14.1::__archiveUrl=https%3A%2F%2Fregistry.nlark.com%2Ftslib%2Fdownload%2Ftslib-1.14.1.tgz", {
+          "packageLocation": "./.yarn/cache/tslib-npm-1.14.1-5936246703-dbe628ef87.zip/node_modules/tslib/",
+          "packageDependencies": [
+            ["tslib", "npm:1.14.1::__archiveUrl=https%3A%2F%2Fregistry.nlark.com%2Ftslib%2Fdownload%2Ftslib-1.14.1.tgz"]
+          ],
+          "linkType": "HARD",
+        }],
         ["npm:2.1.0", {
           "packageLocation": "./.yarn/cache/tslib-npm-2.1.0-81c9ac9b82-aa189c8179.zip/node_modules/tslib/",
           "packageDependencies": [
             ["tslib", "npm:2.1.0"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["tsutils", [
+        ["npm:3.21.0::__archiveUrl=https%3A%2F%2Fregistry.npmmirror.com%2Ftsutils%2Fdownload%2Ftsutils-3.21.0.tgz", {
+          "packageLocation": "./.yarn/cache/tsutils-npm-3.21.0-46174fda8f-1843f4c1b2.zip/node_modules/tsutils/",
+          "packageDependencies": [
+            ["tsutils", "npm:3.21.0::__archiveUrl=https%3A%2F%2Fregistry.npmmirror.com%2Ftsutils%2Fdownload%2Ftsutils-3.21.0.tgz"]
+          ],
+          "linkType": "SOFT",
+        }],
+        ["virtual:a05541bf6440c5c95f7e153b2574cf2274b63b72398cee72506e895a49b5b3dd7f2a7821ae295b3111e5431262d91d3b404e60e35a2db59b84b0cf3c75073d6d#npm:3.21.0::__archiveUrl=https%3A%2F%2Fregistry.npmmirror.com%2Ftsutils%2Fdownload%2Ftsutils-3.21.0.tgz", {
+          "packageLocation": "./.yarn/__virtual__/tsutils-virtual-37c8f1f702/0/cache/tsutils-npm-3.21.0-46174fda8f-1843f4c1b2.zip/node_modules/tsutils/",
+          "packageDependencies": [
+            ["tsutils", "virtual:a05541bf6440c5c95f7e153b2574cf2274b63b72398cee72506e895a49b5b3dd7f2a7821ae295b3111e5431262d91d3b404e60e35a2db59b84b0cf3c75073d6d#npm:3.21.0::__archiveUrl=https%3A%2F%2Fregistry.npmmirror.com%2Ftsutils%2Fdownload%2Ftsutils-3.21.0.tgz"],
+            ["@types/typescript", null],
+            ["tslib", "npm:1.14.1::__archiveUrl=https%3A%2F%2Fregistry.nlark.com%2Ftslib%2Fdownload%2Ftslib-1.14.1.tgz"],
+            ["typescript", null]
+          ],
+          "packagePeers": [
+            "@types/typescript",
+            "typescript"
+          ],
+          "linkType": "HARD",
+        }],
+        ["virtual:a4248fc515287b78274d10127544d0155f671d9175e7fef72d17a3c3be7a23d1d9b8222d7ee54865be4de4d65ab096b98382f19d451043b130d4ac7689ceb66c#npm:3.21.0::__archiveUrl=https%3A%2F%2Fregistry.npmmirror.com%2Ftsutils%2Fdownload%2Ftsutils-3.21.0.tgz", {
+          "packageLocation": "./.yarn/__virtual__/tsutils-virtual-6d40a947a6/0/cache/tsutils-npm-3.21.0-46174fda8f-1843f4c1b2.zip/node_modules/tsutils/",
+          "packageDependencies": [
+            ["tsutils", "virtual:a4248fc515287b78274d10127544d0155f671d9175e7fef72d17a3c3be7a23d1d9b8222d7ee54865be4de4d65ab096b98382f19d451043b130d4ac7689ceb66c#npm:3.21.0::__archiveUrl=https%3A%2F%2Fregistry.npmmirror.com%2Ftsutils%2Fdownload%2Ftsutils-3.21.0.tgz"],
+            ["@types/typescript", null],
+            ["tslib", "npm:1.14.1::__archiveUrl=https%3A%2F%2Fregistry.nlark.com%2Ftslib%2Fdownload%2Ftslib-1.14.1.tgz"],
+            ["typescript", "patch:typescript@npm%3A3.7.7%3A%3A__archiveUrl=https%253A%252F%252Fregistry.npmmirror.com%252Ftypescript%252Fdownload%252Ftypescript-3.7.7.tgz#~builtin<compat/typescript>::version=3.7.7&hash=ddd1e8"]
+          ],
+          "packagePeers": [
+            "@types/typescript",
+            "typescript"
           ],
           "linkType": "HARD",
         }]
@@ -12297,6 +12570,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["typescript", [
+        ["patch:typescript@npm%3A3.7.7%3A%3A__archiveUrl=https%253A%252F%252Fregistry.npmmirror.com%252Ftypescript%252Fdownload%252Ftypescript-3.7.7.tgz#~builtin<compat/typescript>::version=3.7.7&hash=ddd1e8", {
+          "packageLocation": "./.yarn/cache/typescript-patch-c3f9e884f8-61283b54e3.zip/node_modules/typescript/",
+          "packageDependencies": [
+            ["typescript", "patch:typescript@npm%3A3.7.7%3A%3A__archiveUrl=https%253A%252F%252Fregistry.npmmirror.com%252Ftypescript%252Fdownload%252Ftypescript-3.7.7.tgz#~builtin<compat/typescript>::version=3.7.7&hash=ddd1e8"]
+          ],
+          "linkType": "HARD",
+        }],
         ["patch:typescript@npm%3A4.4.4#~builtin<compat/typescript>::version=4.4.4&hash=ddd1e8", {
           "packageLocation": "./.yarn/cache/typescript-patch-d95d140154-bd629ad0da.zip/node_modules/typescript/",
           "packageDependencies": [

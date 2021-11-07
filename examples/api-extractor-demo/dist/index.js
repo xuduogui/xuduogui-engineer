@@ -1,3 +1,4 @@
+"use strict";
 /*
  * @Author: xuziyong
  * @Date: 2021-11-06 00:33:10
@@ -5,8 +6,7 @@
  * @LastEditTime: 2021-11-07 17:24:45
  * @Description: TODO
  */
-
-
+Object.defineProperty(exports, "__esModule", { value: true });
 /**
  * 包描述，一个项目只有一个【packageDocumentation tag】
  *
@@ -21,5 +21,7 @@
  *
  * @packageDocumentation
  */
-
-export {TheClass, TheAbstract} from './moduleTest/TheClass'
+var TheClass_1 = require("./moduleTest/TheClass");
+exports.TheClass = TheClass_1.TheClass;
+exports.TheAbstract = TheClass_1.TheAbstract;
+//# sourceMappingURL=index.js.map

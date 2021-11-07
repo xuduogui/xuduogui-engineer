@@ -3,15 +3,23 @@
   "version": "1.0.0",
   "main": "./lib/index.js",
   "typings": "./lib/index.d.ts",
-  "mainEntryPointFilePath": "/<projectFolder>lib/index.d.ts",
+  "mainEntryPointFilePath": "/<projectFolder>/lib/index.d.ts",
   "scripts": {
+    "lint": "eslint -f unix \"src/**/*.{ts,tsx}\"",
     "build": "tsc",
-    "extractor": "api-extractor run -c ./config/api-extractor.json -l -v --diagnostics",
-    "doc": "api-documenter markdown --input-folder ./temp --output-folder ./doc/markdown",
-    "exdoc": "node ./scripts/exdoc.js"
+    "extractor": "api-extractor run -c ./doc/config/api-extractor.json -l -v --diagnostics",
+    "doc": "api-documenter markdown --input-folder ./doc/temp --output-folder ./doc/markdown",
+    "exdoc": "tsc && node ./scripts/exdoc.js"
   },
   "dependencies": {
-    "@microsoft/api-extractor": "^7.18.17",
     "@xuduogui/commands": "^1.0.2"
+  },
+  "devDependencies": {
+    "@microsoft/api-extractor": "^7.18.17",
+    "@typescript-eslint/eslint-plugin": "~2.6.1",
+    "@typescript-eslint/parser": "~2.6.1",
+    "eslint": "~6.6.0",
+    "eslint-plugin-tsdoc": "^0.2.14",
+    "typescript": "~3.7.2"
   }
 }
