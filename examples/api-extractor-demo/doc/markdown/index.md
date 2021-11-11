@@ -8,5 +8,5 @@
 
 |  Package | Description |
 |  --- | --- |
-|  [@xuduogui/api-extractor-demo](./api-extractor-demo.md) | 包描述，一个项目只有一个【packageDocumentation tag】 |
+|  [@xdg/api-extractor-demo](./api-extractor-demo.md) | 包描述，一个项目只有一个【packageDocumentation tag】 |
 

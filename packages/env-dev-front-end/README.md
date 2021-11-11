@@ -30,7 +30,7 @@ cmd
 
 ``` cmd
 npm init
-npm i @xuduogui/env-dev-front-end
+npm i @xdg/env-dev-front-end
 ```
 
 ### 新建脚本文件
@@ -38,7 +38,7 @@ npm i @xuduogui/env-dev-front-end
 demo.js
 
 ``` javascript
-require('@xuduogui/env-dev-front-end')
+require('@xdg/env-dev-front-end')
 ```
 
 ### 执行脚本

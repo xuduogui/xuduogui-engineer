@@ -160,18 +160,18 @@
     }
   },
   "kind": "Package",
-  "canonicalReference": "@xuduogui/api-extractor-demo!",
+  "canonicalReference": "@xdg/api-extractor-demo!",
   "docComment": "/**\n * 包描述，一个项目只有一个【packageDocumentation tag】\n *\n * @remarks\n *\n * 【remarks tag】 演示效果（文件头） 同样也是demo包的入口文件\n *\n * @privateRemarks\n *\n * 【privateRemarks tag】私有privateRemarks演示,不面向公众受众的附加文档内容\n *\n * @packageDocumentation\n */\n",
-  "name": "@xuduogui/api-extractor-demo",
+  "name": "@xdg/api-extractor-demo",
   "members": [
     {
       "kind": "EntryPoint",
-      "canonicalReference": "@xuduogui/api-extractor-demo!",
+      "canonicalReference": "@xdg/api-extractor-demo!",
       "name": "",
       "members": [
         {
           "kind": "Class",
-          "canonicalReference": "@xuduogui/api-extractor-demo!TheAbstract:class",
+          "canonicalReference": "@xdg/api-extractor-demo!TheAbstract:class",
           "docComment": "/**\n * 测试抽象类的表现\n *\n * @public\n */\n",
           "excerptTokens": [
             {
@@ -184,7 +184,7 @@
           "members": [
             {
               "kind": "Method",
-              "canonicalReference": "@xuduogui/api-extractor-demo!TheAbstract#absMethod:member(1)",
+              "canonicalReference": "@xdg/api-extractor-demo!TheAbstract#absMethod:member(1)",
               "docComment": "/**\n * 抽象方法\n *\n * @virtual\n */\n",
               "excerptTokens": [
                 {
@@ -213,7 +213,7 @@
             },
             {
               "kind": "Property",
-              "canonicalReference": "@xuduogui/api-extractor-demo!TheAbstract#name:member",
+              "canonicalReference": "@xdg/api-extractor-demo!TheAbstract#name:member",
               "docComment": "/**\n * name\n *\n * @virtual\n */\n",
               "excerptTokens": [
                 {
@@ -243,7 +243,7 @@
         },
         {
           "kind": "Class",
-          "canonicalReference": "@xuduogui/api-extractor-demo!TheClass:class",
+          "canonicalReference": "@xdg/api-extractor-demo!TheClass:class",
           "docComment": "/**\n * 测试普通类的表现 构造函数使用tag internal标记，即为第三方不要用 注意：在构造函数其他信息会被省略 {@link www.baidu.com | 测试} 测试link 测试link 接口 {@link ClassMsg | 测试2} ClassMsg 测试link 方法 {@link testMsg | 方法测试}\n *\n * @remarks\n *\n * The constructor for this class is marked as internal. Third-party code should not call the constructor directly or create subclasses that extend the `TheClass` class.\n *\n * @public\n */\n",
           "excerptTokens": [
             {
@@ -253,7 +253,7 @@
             {
               "kind": "Reference",
               "text": "TheAbstract",
-              "canonicalReference": "@xuduogui/api-extractor-demo!TheAbstract:class"
+              "canonicalReference": "@xdg/api-extractor-demo!TheAbstract:class"
             },
             {
               "kind": "Content",
@@ -265,7 +265,7 @@
           "members": [
             {
               "kind": "Method",
-              "canonicalReference": "@xuduogui/api-extractor-demo!TheClass#absMethod:member(1)",
+              "canonicalReference": "@xdg/api-extractor-demo!TheClass#absMethod:member(1)",
               "docComment": "/**\n * 测试public方法\n *\n * @returns TheClass实例的名称 + id（`${this.name}: ${this.id}`）; e.g: `测试名称`: 1234\n *\n * @public @experimental\n */\n",
               "excerptTokens": [
                 {
@@ -294,7 +294,7 @@
             },
             {
               "kind": "Property",
-              "canonicalReference": "@xuduogui/api-extractor-demo!TheClass#classId:member",
+              "canonicalReference": "@xdg/api-extractor-demo!TheClass#classId:member",
               "docComment": "/**\n * id\n *\n * @readonly\n */\n",
               "excerptTokens": [
                 {
@@ -321,7 +321,7 @@
             },
             {
               "kind": "Property",
-              "canonicalReference": "@xuduogui/api-extractor-demo!TheClass#msg:member",
+              "canonicalReference": "@xdg/api-extractor-demo!TheClass#msg:member",
               "docComment": "/**\n * 消息 {@link ClassMsg} 消息类型\n *\n * @defaultValue\n *\n * default value is {msg: '', type: 1}\n *\n * @public\n */\n",
               "excerptTokens": [
                 {
@@ -331,7 +331,7 @@
                 {
                   "kind": "Reference",
                   "text": "ClassMsg",
-                  "canonicalReference": "@xuduogui/api-extractor-demo!ClassMsg:interface"
+                  "canonicalReference": "@xdg/api-extractor-demo!ClassMsg:interface"
                 },
                 {
                   "kind": "Content",
@@ -349,7 +349,7 @@
             },
             {
               "kind": "Property",
-              "canonicalReference": "@xuduogui/api-extractor-demo!TheClass#name:member",
+              "canonicalReference": "@xdg/api-extractor-demo!TheClass#name:member",
               "docComment": "/**\n * TheClass 实例的name；e.g: `preName`\n */\n",
               "excerptTokens": [
                 {

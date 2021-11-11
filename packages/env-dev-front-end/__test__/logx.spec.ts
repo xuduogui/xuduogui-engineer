@@ -1,10 +1,4 @@
-/*
- * @Author: xuziyong
- * @Date: 2021-10-30 19:51:26
- * @LastEditors: xuziyong
- * @LastEditTime: 2021-11-02 00:17:39
- * @Description: 测试src/config/logx.ts
- */
+
 import fs from 'fs-extra'
 import { logx, logFile } from '../src/config/logx'
 
@@ -16,7 +10,7 @@ function sleepTime(time) {
   })
 }
 
-describe('@xuduogui/env-dev-front-end: /src/config/logx', () => {
+describe('@xdg/env-dev-front-end: /src/config/logx', () => {
   describe('console被log4js代理', () => {
 
     const logStr = '我是测试console.log'

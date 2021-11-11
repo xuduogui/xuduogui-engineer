@@ -1,5 +1,5 @@
 {
-  "name": "@xuduogui/api-extractor-demo",
+  "name": "@xdg/api-extractor-demo",
   "version": "1.0.0",
   "main": "./lib/index.js",
   "typings": "./lib/index.d.ts",
@@ -12,7 +12,7 @@
     "exdoc": "tsc && node ./scripts/exdoc.js"
   },
   "dependencies": {
-    "@xuduogui/commands": "^1.0.2"
+    "@xdg/commands": "^1.0.2"
   },
   "devDependencies": {
     "@microsoft/api-extractor": "^7.18.17",

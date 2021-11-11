@@ -5,7 +5,7 @@
  * @LastEditTime: 2021-11-07 01:32:17
  * @Description: TODO
  */
-const { doCommand } = require('@xuduogui/commands')
+const { doCommand } = require('@xdg/commands')
 
 run()
 
