@@ -1,6 +1,7 @@
 {
   "name": "@xdg/api-extractor-demo",
   "version": "1.0.1",
+  "private":"true",
   "main": "./lib/index.js",
   "typings": "./lib/index.d.ts",
   "mainEntryPointFilePath": "/<projectFolder>/lib/index.d.ts",
