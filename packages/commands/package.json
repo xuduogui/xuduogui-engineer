@@ -1,6 +1,6 @@
 {
   "name": "@xdg/commands",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "命令行构建工具",
   "packageManager": "yarn@3.1.0",
   "main": "index.js",

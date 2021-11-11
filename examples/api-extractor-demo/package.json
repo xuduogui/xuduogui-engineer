@@ -1,6 +1,6 @@
 {
   "name": "@xdg/api-extractor-demo",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "./lib/index.js",
   "typings": "./lib/index.d.ts",
   "mainEntryPointFilePath": "/<projectFolder>/lib/index.d.ts",
@@ -12,7 +12,7 @@
     "exdoc": "tsc && node ./scripts/exdoc.js"
   },
   "dependencies": {
-    "@xdg/commands": "^1.0.2"
+    "@xdg/commands": "^1.0.3"
   },
   "devDependencies": {
     "@microsoft/api-extractor": "^7.18.17",
