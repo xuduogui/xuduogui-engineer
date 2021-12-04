@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <!-- Include the CesiumJS JavaScript and CSS files -->
+  <script src="libs/config.js"></script>
+  <script src="../dist/@xdg/tools-cesium.iife.js"></script>
+  <script src="../dist/Build/Cesium/Cesium.js"></script>
+  <link href="../dist/Build/Cesium/Widgets/widgets.css" rel="stylesheet">
+  <script src="https://unpkg.com/rxjs@^7/dist/bundles/rxjs.umd.min.js"></script>
+  <script src="./libs/terminer.js"></script>
+</head>
+<body>
+  <div id="cesiumContainer"></div>
+  <script>
+    Cesium.Ion.defaultAccessToken = CONSUMER_CESIUM_CONFIG.token;
+    const paramsData = location.href.substring(location.href.indexOf('?') + 1)
+    function loadScript(paramsData) {
+      const loadElement = document.createElement('script')
+      loadElement.src = `.\/${paramsData}\/index.js`
+      const head = document.querySelector('head')
+      head.appendChild(loadElement)
+    }
+    loadScript(paramsData)
+  </script>
+ </div>
+</body>
+</html>
