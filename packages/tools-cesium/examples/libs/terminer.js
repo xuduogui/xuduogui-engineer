@@ -1,4 +1,6 @@
-var { fromEventPattern } = rxjs
+var {
+  fromEventPattern
+} = rxjs
 var cmd = {};
 
 cmd.value = null
@@ -6,7 +8,7 @@ cmd.value = null
 cmd.$bus = {
   list: [],
   emit: (type, data) => {
-    cmd.$bus.list.forEach(e => e.type === type && e.func(data) )
+    cmd.$bus.list.forEach(e => e.type === type && e.func(data))
   },
   on: (type, func) => {
     if (type === 'update') {
@@ -34,12 +36,21 @@ cmd.bindTarget = function (target) {
   cmd.$bus.list = []
   const handler = {
     set(obj, prop, value) {
+      obj[prop] = value
       cmd.$bus.emit('update', {
-        obj, prop, value
+        obj,
+        prop,
+        value
       })
       return Reflect.set(...arguments);
     }
   };
   cmd.value = new Proxy(target, handler)
   return cmd.value
+}
+
+cmd.action = function () {
+  cmd.$bus.emit('update', {
+    obj: cmd.value,
+  })
 }
