@@ -17,8 +17,8 @@ viewer.camera.flyTo({
   },
 });
 
-let model = {
-  gradient: false,
+const model = {
+  gradient: true,
   band1Position: 7000.0,
   band2Position: 7500.0,
   band3Position: 8000.0,
@@ -30,4 +30,9 @@ let model = {
 cmd.bindTarget(model)
 
 cmd.stream$
-  .subscribe(x => tolCM.updateMaterialBand(viewer, x.obj))
+  .subscribe(x => {
+    console.log('action:', x)
+    tolCM.updateMaterialBand(viewer, x.obj)
+  })
+
+cmd.action()

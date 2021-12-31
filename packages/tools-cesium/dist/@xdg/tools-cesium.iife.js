@@ -12,7 +12,6 @@ var tolCM = (function (exports) {
   };
 
   function updateMaterialBand(viewer, viewModel = viewModelMaterialBand) {
-      console.log(viewModel);
       let gradient = Boolean(viewModel.gradient);
       let band1Position = Number(viewModel.band1Position);
       let band2Position = Number(viewModel.band2Position);

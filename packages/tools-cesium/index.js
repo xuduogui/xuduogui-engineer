@@ -9,7 +9,7 @@
 const packageJson = require('./package.json')
 
 if (process.env.NODE_ENV === `production`) {
-  module.exports = require(`./dist/${packageJson.name}.cjs.prod.js`)
+  module.exports = require(`./dist/${packageJson.name}.iife.prod.js`)
 } else {
-  module.exports = require(`./dist/${packageJson.name}.cjs.js`)
+  module.exports = require(`./dist/${packageJson.name}.iife.js`)
 }

@@ -1,16 +1,24 @@
 import { viewModelMaterialBand } from '../defaultModels/material'
 
 export function updateMaterialBand(viewer: Cesium.Viewer, viewModel = viewModelMaterialBand) {
-  console.log(viewModel)
+  // true，混合色；false：纯色；
   let gradient = Boolean(viewModel.gradient);
+  // 蓝色
   let band1Position = Number(viewModel.band1Position);
+  // 绿色
   let band2Position = Number(viewModel.band2Position);
+  // 红色
   let band3Position = Number(viewModel.band3Position);
+  // 厚度
   let bandThickness = Number(viewModel.bandThickness);
+  // 透明度（带子）
   let bandTransparency = Number(viewModel.bandTransparency);
+  // 透明度（背景）
   let backgroundTransparency = Number(viewModel.backgroundTransparency);
 
   let layers = [];
+
+  // 关注点（三色海拔条）
   let backgroundLayer = {
     entries: [
       {
@@ -31,6 +39,7 @@ export function updateMaterialBand(viewer: Cesium.Viewer, viewModel = viewModelM
   };
   layers.push(backgroundLayer);
 
+  // 海拔线（间隔50）
   let gridStartHeight = 4200.0;
   let gridEndHeight = 8848.0;
   let gridCount = 50;
