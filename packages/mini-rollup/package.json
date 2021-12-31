@@ -1,5 +1,4 @@
 {
   "name": "@xdg/mini-rollup",
-  "packageManager": "yarn@3.1.0",
-  "private": "true"
+  "packageManager": "yarn@3.1.0"
 }
