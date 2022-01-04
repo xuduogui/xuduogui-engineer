@@ -1,8 +1,5 @@
-const {
-  Command,
-  InvalidArgumentError
-} = require('commander');
-const program = new Command();
+const { Command, InvalidArgumentError } = require('commander')
+const program = new Command()
 // program.version('0.0.1', '-v, --version');
 
 // program
@@ -15,14 +12,11 @@ const program = new Command();
 
 // const options = program.opts();
 
-
 // if (options.debug) console.log(options);
-
 
 // if (options.small) console.log('- small pizza size');
 
 // if (options.pizzaType) console.log(`- ${options.pizzaType}`);
-
 
 // function myParseInt(value, dummyPrevious) {
 //   // parseInt 参数为字符串和进制数

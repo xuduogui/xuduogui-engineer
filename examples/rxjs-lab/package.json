@@ -1,5 +1,5 @@
 {
-  "name": "rxjs-demo",
+  "name": "rxjs-lab",
   "packageManager": "yarn@3.1.0",
   "scripts": {
     "dev": "node ./scripts/webpack.dev.js",

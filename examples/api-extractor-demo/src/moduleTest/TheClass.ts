@@ -6,7 +6,7 @@
  * @Description: TODO
  */
 
-import { AnyFunction, PropertiesExcept } from "../types";
+import { AnyFunction, PropertiesExcept } from '../types'
 
 /**
  * 测试抽象类的表现
@@ -14,9 +14,9 @@ import { AnyFunction, PropertiesExcept } from "../types";
  */
 export abstract class TheAbstract {
   /** name @virtual */
-  abstract name: string;
+  abstract name: string
   /** 抽象方法 @virtual */
-  abstract absMethod(): string;
+  abstract absMethod(): string
 }
 
 /**
@@ -26,9 +26,9 @@ export abstract class TheAbstract {
  */
 export interface ClassMsg {
   /** 消息 */
-  msg?: string;
+  msg?: string
   /** 类型 */
-  type: number;
+  type: number
 }
 
 /**
@@ -44,15 +44,15 @@ export function testMsg(): string {
  * 构造函数使用tag internal标记，即为第三方不要用
  * 注意：在构造函数其他信息会被省略 {@link www.baidu.com | 测试} 测试link
  * 测试link 接口 {@link ClassMsg | 测试2} ClassMsg
- * 测试link 方法 {@link testMsg | 方法测试} 
+ * 测试link 方法 {@link testMsg | 方法测试}
  * @public
  */
 export class TheClass extends TheAbstract {
   /** TheClass 实例的name；e.g: `preName` */
-  readonly name: string;
+  readonly name: string
 
   /** TheClass 实例的id； e.g: 123 */
-  private id: number;
+  private id: number
 
   /**
    * 消息
@@ -63,7 +63,7 @@ export class TheClass extends TheAbstract {
    *
    * @public
    */
-  public msg: ClassMsg;
+  public msg: ClassMsg
 
   /**
    * @internal
@@ -91,5 +91,4 @@ export class TheClass extends TheAbstract {
   absMethod(): string {
     return `${this.name}: ${this.id}`
   }
-
 }

@@ -6,7 +6,6 @@
  * @Description: TODO
  */
 
-
 /**
  * 包描述，一个项目只有一个【packageDocumentation tag】
  *
@@ -22,4 +21,4 @@
  * @packageDocumentation
  */
 
-export {TheClass, TheAbstract} from './moduleTest/TheClass'
+export { TheClass, TheAbstract } from './moduleTest/TheClass'
