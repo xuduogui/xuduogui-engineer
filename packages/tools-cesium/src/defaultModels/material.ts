@@ -5,5 +5,5 @@ export const viewModelMaterialBand = {
   band3Position: 8000.0,
   bandThickness: 100.0,
   bandTransparency: 0.5,
-  backgroundTransparency: 0.75,
-};
+  backgroundTransparency: 0.75
+}

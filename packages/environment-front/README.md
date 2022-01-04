@@ -10,17 +10,17 @@
 
 ## 前提
 
-* nvm
+- nvm
 
 ## 功能集
 
-* [x] node
-* [x] npm
-* [x] yarn
-* [x] nrm
-* [x] lerna
-* [x] rollup
-* [x] vue
+- [x] node
+- [x] npm
+- [x] yarn
+- [x] nrm
+- [x] lerna
+- [x] rollup
+- [x] vue
 
 ## 使用方式
 
@@ -28,7 +28,7 @@
 
 cmd
 
-``` cmd
+```cmd
 npm init
 npm i @xdg/env-dev-front-end
 ```
@@ -37,7 +37,7 @@ npm i @xdg/env-dev-front-end
 
 demo.js
 
-``` javascript
+```javascript
 require('@xdg/env-dev-front-end')
 ```
 
@@ -45,6 +45,6 @@ require('@xdg/env-dev-front-end')
 
 cmd
 
-``` cmd
+```cmd
 node demo.js
 ```

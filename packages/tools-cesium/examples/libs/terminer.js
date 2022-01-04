@@ -1,7 +1,5 @@
-var {
-  fromEventPattern
-} = rxjs
-var cmd = {};
+var { fromEventPattern } = rxjs
+var cmd = {}
 
 cmd.value = null
 
@@ -18,19 +16,19 @@ cmd.$bus = {
       })
     }
   },
-  off: (type) => {
+  off: type => {
     cmd.$bus.list = cmd.$bus.list.filter(e => e.type !== type)
   }
 }
 
 cmd.stream$ = fromEventPattern(
   function (handler) {
-    return cmd.$bus.on('update', handler);
+    return cmd.$bus.on('update', handler)
   },
   function () {
-    cmd.$bus.off('update');
+    cmd.$bus.off('update')
   }
-);
+)
 
 cmd.bindTarget = function (target) {
   cmd.$bus.list = []
@@ -42,15 +40,15 @@ cmd.bindTarget = function (target) {
         prop,
         value
       })
-      return Reflect.set(...arguments);
+      return Reflect.set(...arguments)
     }
-  };
+  }
   cmd.value = new Proxy(target, handler)
   return cmd.value
 }
 
 cmd.action = function () {
   cmd.$bus.emit('update', {
-    obj: cmd.value,
+    obj: cmd.value
   })
 }

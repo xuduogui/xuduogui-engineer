@@ -20,13 +20,13 @@ const logConfigDefault = {
   },
   categories: {
     // 默认日志
-    default: { appenders: ['file', 'console'], level: 'debug' },
+    default: { appenders: ['file', 'console'], level: 'debug' }
   }
 }
 
-log.configure(logConfigDefault);
+log.configure(logConfigDefault)
 
-export const logx = log.getLogger();
+export const logx = log.getLogger()
 
 /**
  * console 代理
@@ -46,14 +46,14 @@ function createLogProxy(logLevel: string, logger: log.Logger = logx) {
       case 'error':
         return logger.error(messeage, ...arg)
       default:
-        break;
+        break
     }
-  };
+  }
 }
-console.log = createLogProxy('debug');
-console.info = createLogProxy('info');
-console.warn = createLogProxy('warn');
-console.error = createLogProxy('error');
+console.log = createLogProxy('debug')
+console.info = createLogProxy('info')
+console.warn = createLogProxy('warn')
+console.error = createLogProxy('error')
 
 logx.info(logFile)
 

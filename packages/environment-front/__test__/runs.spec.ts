@@ -1,4 +1,3 @@
-
 import runs from '../src/config/runs'
 
 describe('@xdg/env-dev-front-end: /src/config/runs', () => {

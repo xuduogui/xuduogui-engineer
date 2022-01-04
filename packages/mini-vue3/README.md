@@ -11,7 +11,7 @@
 ## 实现功能点
 
 - [ ] mvvm 模式
-- [ ] proxy响应式
-- [ ] diff算法
+- [ ] proxy 响应式
+- [ ] diff 算法
 - [ ] virtual dom
 - [ ] 生命周期

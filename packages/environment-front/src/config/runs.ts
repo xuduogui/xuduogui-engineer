@@ -1,4 +1,4 @@
-import { installBase, envTest } from "../tasks";
+import { installBase, envTest } from '../tasks'
 
 /*
  * @Author: xuziyong
@@ -10,10 +10,10 @@ import { installBase, envTest } from "../tasks";
 export default [
   {
     title: 'task: env test',
-    task: envTest,
+    task: envTest
   },
   {
     title: 'task: install-Base',
     task: installBase
-  },
+  }
 ]

@@ -5,11 +5,11 @@
  * @LastEditTime: 2021-11-06 23:25:14
  * @Description: TODO
  */
-import execa, { ExecaError }  from 'execa'
+import execa, { ExecaError } from 'execa'
 
-export const doCommand = async function(cmd: string) {
+export const doCommand = async function (cmd: string) {
   try {
-    await execa.command(cmd);
+    await execa.command(cmd)
   } catch (error: unknown) {
     console.error((error as ExecaError).stderr || error)
   }

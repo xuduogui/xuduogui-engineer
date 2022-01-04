@@ -1,5 +1,5 @@
 {
-  "name": "@xdg/env-dev-front-end",
+  "name": "@xdg/environment-front",
   "version": "1.1.4",
   "description": "快速搭建前端开发环境",
   "main": "index.js",
@@ -12,7 +12,8 @@
     "build": "rollup -c ./rollup.config.js",
     "dev": "tsc & node script/src/index.js",
     "env": "ts-node src/index.ts",
-    "prod": "node ./index.js"
+    "prod": "node ./index.js",
+    "lint": "eslint . --ext .js,.ts"
   },
   "author": "xuduogui",
   "license": "MIT",
@@ -35,6 +36,9 @@
     "@types/jest": "^27.0.2",
     "@types/listr": "^0.14.4",
     "@types/node": "^16.11.0",
+    "@typescript-eslint/eslint-plugin": "^5.8.1",
+    "@typescript-eslint/parser": "^5.9.0",
+    "eslint": "^8.6.0",
     "fs-extra": "^10.0.0",
     "jest": "^27.3.1",
     "rollup-plugin-eslint": "^7.0.0",

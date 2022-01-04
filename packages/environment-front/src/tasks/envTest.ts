@@ -5,9 +5,10 @@
  * @LastEditTime: 2021-10-31 00:13:42
  * @Description: TODO
  */
-import execa from "execa";
+import execa from 'execa'
 
-const showStr = (str: string) => `=========================== ${str} ===========================`
+const showStr = (str: string) =>
+  `=========================== ${str} ===========================`
 
 const log = console.log
 
@@ -21,7 +22,7 @@ export const envTest = async () => {
   try {
     taskItem('nvm', 'nvm version')
   } catch (error) {
-    console.error(error);
+    console.error(error)
     throw new Error('基础环境异常，请检查')
-  };
+  }
 }
