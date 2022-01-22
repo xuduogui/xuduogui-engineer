@@ -13,7 +13,8 @@
     "dev": "tsc & node script/src/index.js",
     "env": "ts-node src/index.ts",
     "prod": "node ./index.js",
-    "lint": "eslint . --ext .js,.ts"
+    "lint": "eslint . --ext .js,.ts",
+    "format": "prettier --write ."
   },
   "author": "xuduogui",
   "license": "MIT",

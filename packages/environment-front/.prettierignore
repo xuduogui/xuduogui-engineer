@@ -1,0 +1,9 @@
+dist
+doc
+coverage
+*.md
+*.json
+.yarn
+.vscode
+*.yml
+*.eslintrc
